@@ -1,0 +1,80 @@
+/********************  karaKrisz formating start **********************/
+
+/********************  Header Top Left start **********************/
+
+.listnone--d-none {
+    display: none;
+}
+
+/********************  Color Switcher start **********************/
+
+.color-switcher {
+    display: none;
+}
+
+/********************  Header Top Right Social start **********************/
+
+.listnone__login-li {
+    display: none !important;
+}
+
+.listnone__reg-li {
+    display: none !important;
+}
+
+.listnone__user-data-li {
+    display: none !important;
+}
+
+/********************  Advanced Search start **********************/
+
+.advance-search {
+    display: none !important;
+}
+
+/********************  Follow Us start **********************/
+
+.footer-top .widget.socail-icons li a.Instagram {
+    background-color: red !important;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/********************  Media start **********************/
+
+@media screen and (max-width: 767px) {
+
+    #banner {
+        background-position-y: 0;
+    }
+
+    .listnone {
+        display: none;
+    }
+
+    .colored-header {
+        position: fixed;
+        z-index: 100;
+        background: white;
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .services-grid {
+        text-align: center;
+    }
+
+    .services-center .services-grid .icons i,
+    .services-grid .icons i {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .pl-12 {
+        position: relative;
+        left: 12px;
+    }
+}
