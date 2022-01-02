@@ -3,21 +3,21 @@
 	    <div class="bg2 p-t-50 p-b-110">
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-sm-6 col-lg-3">
+	                <div class="col-sm-6 col-lg-6">
 	                    <div class="wrap-pic-max-h wrap-pic-max-w flex-m hsize1">
-	                        <a href="index.html"><img src="images/icons/logo03.png" alt="LOGO"></a>
+	                        <a href="/"><img class="footer__link__img" src="karaKrisz/img/logo.png" alt="LOGO"></a>
 	                    </div>
 
-	                    <p class="s1-txt3">
+	                    <p class="s1-txt3 d-none">
 	                        Donec tristique diam eu feugiat dapi-bus. Cras lobortis nisl ac finibus gravi-da. Duis egestas
 	                        imperdiet vestibu-lum. Curabitur commodo nibh nisi, at varius justo eleifend vel quam.
 	                    </p>
 	                </div>
 
-	                <div class="col-sm-6 col-lg-3">
+	                <div class="col-sm-6 col-lg-6">
 	                    <div class="wrap-pic-max-h wrap-pic-max-w flex-m hsize1">
 	                        <h4 class="m2-txt2">
-	                            Contact Us
+	                            Lépjen kapcsolatba velünk
 	                        </h4>
 	                    </div>
 
@@ -25,34 +25,56 @@
 	                        <li class="s1-txt3 flex-w p-b-17">
 	                            <i class="fa fa-home fs-20 wsize1"></i>
 	                            <span class="wsize2">
-	                                379 5th Ave New York, United States.
+	                                7521 Kaposmérő, Rákóczi utca 9
 	                            </span>
 	                        </li>
 
 	                        <li class="s1-txt3 flex-w p-b-17">
 	                            <i class="fa fa-clock-o fs-20 wsize1"></i>
 	                            <span class="wsize2">
-	                                Tusday-Monday: 9:00am-6:00pm
+	                                Hét-Szom: 10:00-21:00 <br>
+	                                Vas: 10:00-17:00
 	                            </span>
 	                        </li>
 
 	                        <li class="s1-txt3 flex-w p-b-17">
 	                            <i class="fa fa-envelope-o fs-20 wsize1"></i>
 	                            <span class="wsize2">
-	                                Example@aucreative.com
+	                                <a class="footer__contact-link"
+	                                    href="mailto:kassai.fogado@gmail.com">kassai.fogado@gmail.com</a>
 	                            </span>
 	                        </li>
 
 	                        <li class="s1-txt3 flex-w p-b-17">
 	                            <i class="fa fa-phone fs-20 wsize1"></i>
 	                            <span class="wsize2">
-	                                Phone: +1-23-456789
+	                                Telefonszám: <a class="footer__contact-link" href="tel:+06304098583">06 (30) 409
+	                                    8583</a>
 	                            </span>
 	                        </li>
 	                    </ul>
+
+	                    <div class="flex-w p-t-25">
+	                        <a target="_blank" href="https://www.facebook.com/kassaifogado"
+	                            class="flex-c-m how-social1 trans-04 m-r-10 m-b-10">
+	                            <i class="fa fa-facebook"></i>
+	                        </a>
+
+	                        <!-- <a href="#" class="flex-c-m how-social1 trans-04 m-r-10 m-b-10">
+	                            <i class="fa fa-twitter"></i>
+	                        </a>
+
+	                        <a href="#" class="flex-c-m how-social1 trans-04 m-r-10 m-b-10">
+	                            <i class="fa fa-google-plus"></i>
+	                        </a> -->
+
+	                        <a href="#" class="flex-c-m how-social1 trans-04 m-r-10 m-b-10">
+	                            <i class="fa fa-instagram"></i>
+	                        </a>
+	                    </div>
 	                </div>
 
-	                <div class="col-sm-6 col-lg-3">
+	                <div class="col-sm-6 col-lg-3 d-none">
 	                    <div class="wrap-pic-max-h wrap-pic-max-w flex-m hsize1">
 	                        <h4 class="m2-txt2">
 	                            Latest Post
@@ -82,7 +104,7 @@
 	                    </ul>
 	                </div>
 
-	                <div class="col-sm-6 col-lg-3">
+	                <div class="col-sm-6 col-lg-3 d-none">
 	                    <div class="wrap-pic-max-h wrap-pic-max-w flex-m hsize1">
 	                        <h4 class="m2-txt2">
 	                            Subcribe
@@ -120,7 +142,10 @@
 	    </div>
 
 	    <div class="bg4 s1-txt7 txt-center p-l-15 p-r-15 p-t-28 p-b-28">
-	        Copyright © Designed by AuThemes. All rights reserved.
+	        Copyright © <a class="footer_copyright-link" href="https://www.yousite.hu/" target="_blank"
+	            rel="noopener noreferrer">YuoSite</a>.
+	        Minden jog
+	        fenntartva.
 	    </div>
 	</footer>
 

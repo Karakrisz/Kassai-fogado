@@ -6,7 +6,7 @@
 	                <!-- Slide 1 -->
 	                <li data-transition="fade">
 	                    <!--  -->
-	                    <img src="images/bg-slide-01.jpg" alt="IMG-BG" class="rev-slidebg">
+	                    <img src="karaKrisz/img/slider.jpeg" alt="IMG-BG" class="rev-slidebg">
 
 	                    <!--  -->
 	                    <div class="tp-caption tp-resizeme flex-c-m flex-w caption-1"
@@ -30,7 +30,7 @@
 	                        data-whitespace="['normal']" data-paddingtop="[0, 0, 0, 0]"
 	                        data-paddingright="[15, 15, 15, 15]" data-paddingbottom="[0, 0, 0, 0]"
 	                        data-paddingleft="[15, 15, 15, 15]" data-basealign="slide" data-responsive_offset="off">
-	                        We Love Delicious
+	                        Kassai Fogadó
 	                    </h2>
 
 	                    <!--  -->
@@ -38,15 +38,15 @@
 	                        data-frames='[{"delay":3400,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 	                        data-x="['center']" data-y="['center']" data-hoffset="['0', '0', '0', '0']"
 	                        data-voffset="['110', '110', '130', '40']" data-width="['1200','992','768','576']"
-	                        data-height="['auto']" data-paddingtop="[0, 0, 0, 0]" data-paddingright="[15, 15, 15, 15]"
+	                        data-height="['auto']" data-paddingtop="[15, 15, 15, 15]" data-paddingright="[15, 15, 15, 15]"
 	                        data-paddingbottom="[0, 0, 0, 0]" data-paddingleft="[15, 15, 15, 15]" data-basealign="slide"
 	                        data-responsive_offset="off">
-	                        <a href="menu-01.html" class="btn1 flex-c-m">
-	                            VIEW MENU
+	                        <a target="_blank" href="/etlap" class="btn1 flex-c-m">
+	                            ÉTLAP
 	                        </a>
 
-	                        <a href="reservation-02.html" class="btn2 flex-c-m">
-	                            BOOK A TABLE
+	                        <a href="tel:+36304098583" class="btn2 flex-c-m">
+	                            HÍVÁS MOST
 	                        </a>
 	                    </div>
 	                </li>
@@ -54,7 +54,7 @@
 	                <!-- Slide 2 -->
 	                <li data-transition="fade">
 	                    <!--  -->
-	                    <img src="images/bg-slide-01.jpg" alt="IMG-BG" class="rev-slidebg">
+	                    <img src="karaKrisz/img/slider2.jpeg" alt="IMG-BG" class="rev-slidebg">
 
 	                    <!--  -->
 	                    <div class="tp-caption tp-resizeme flex-c-m flex-w caption-1"
@@ -78,7 +78,7 @@
 	                        data-whitespace="['normal']" data-paddingtop="[0, 0, 0, 0]"
 	                        data-paddingright="[15, 15, 15, 15]" data-paddingbottom="[0, 0, 0, 0]"
 	                        data-paddingleft="[15, 15, 15, 15]" data-basealign="slide" data-responsive_offset="off">
-	                        We Love Delicious
+	                        Szeretjük a finomat
 	                    </h2>
 
 	                    <!--  -->
@@ -89,12 +89,12 @@
 	                        data-height="['auto']" data-paddingtop="[0, 0, 0, 0]" data-paddingright="[15, 15, 15, 15]"
 	                        data-paddingbottom="[0, 0, 0, 0]" data-paddingleft="[15, 15, 15, 15]" data-basealign="slide"
 	                        data-responsive_offset="off">
-	                        <a href="menu-01.html" class="btn1 flex-c-m">
-	                            VIEW MENU
+	                        <a target="_blank" href="/etlap" class="btn1 flex-c-m">
+	                            ÉTLAP
 	                        </a>
 
-	                        <a href="reservation-02.html" class="btn2 flex-c-m">
-	                            BOOK A TABLE
+	                        <a href="tel:+36304098583" class="btn2 flex-c-m">
+	                            HÍVÁS MOST
 	                        </a>
 	                    </div>
 	                </li>
@@ -102,7 +102,7 @@
 	                <!-- Slide 3 -->
 	                <li data-transition="fade">
 	                    <!--  -->
-	                    <img src="images/bg-slide-01.jpg" alt="IMG-BG" class="rev-slidebg">
+	                    <img src="karaKrisz/img/slider3.jpeg" alt="IMG-BG" class="rev-slidebg">
 
 	                    <!--  -->
 	                    <div class="tp-caption tp-resizeme flex-c-m flex-w caption-1"
@@ -126,7 +126,7 @@
 	                        data-whitespace="['normal']" data-paddingtop="[0, 0, 0, 0]"
 	                        data-paddingright="[15, 15, 15, 15]" data-paddingbottom="[0, 0, 0, 0]"
 	                        data-paddingleft="[15, 15, 15, 15]" data-basealign="slide" data-responsive_offset="off">
-	                        We Love Delicious
+	                        Szeretettel Köszöntjük !
 	                    </h2>
 
 	                    <!--  -->
@@ -137,12 +137,12 @@
 	                        data-height="['auto']" data-paddingtop="[0, 0, 0, 0]" data-paddingright="[15, 15, 15, 15]"
 	                        data-paddingbottom="[0, 0, 0, 0]" data-paddingleft="[15, 15, 15, 15]" data-basealign="slide"
 	                        data-responsive_offset="off">
-	                        <a href="menu-01.html" class="btn1 flex-c-m">
-	                            VIEW MENU
+	                        <a target="_blank" href="/etlap" class="btn1 flex-c-m">
+	                            ÉTLAP
 	                        </a>
 
-	                        <a href="reservation-02.html" class="btn2 flex-c-m">
-	                            BOOK A TABLE
+	                        <a href="tel:+36304098583" class="btn2 flex-c-m">
+	                            HÍVÁS MOST
 	                        </a>
 	                    </div>
 	                </li>
@@ -160,11 +160,11 @@
 	    <div class="container">
 	        <div class="p-b-23">
 	            <h3 class="l2-txt1 txt-center p-b-2">
-	                Our Menu
+	                Napi menü
 	            </h3>
 
 	            <p class="m3-txt1 txt-center">
-	                Today Is a Special Day
+	                Szeretettel köszöntjük honlapunkon!
 	            </p>
 	        </div>
 
@@ -173,23 +173,23 @@
 	            <!-- Nav tabs -->
 	            <ul class="nav nav-tabs" role="tablist">
 	                <li class="nav-item">
-	                    <a class="nav-link active" data-toggle="tab" href="#salad" role="tab">Salad</a>
+	                    <a class="nav-link active" data-toggle="tab" href="#salad" role="tab">Hétfő</a>
 	                </li>
 
 	                <li class="nav-item">
-	                    <a class="nav-link" data-toggle="tab" href="#steak" role="tab">Steak</a>
+	                    <a class="nav-link" data-toggle="tab" href="#steak" role="tab">Kedd</a>
 	                </li>
 
 	                <li class="nav-item">
-	                    <a class="nav-link" data-toggle="tab" href="#potato" role="tab">Potato</a>
+	                    <a class="nav-link" data-toggle="tab" href="#potato" role="tab">Szerda</a>
 	                </li>
 
 	                <li class="nav-item">
-	                    <a class="nav-link" data-toggle="tab" href="#pizza" role="tab">Pizza</a>
+	                    <a class="nav-link" data-toggle="tab" href="#pizza" role="tab">Csütörtök</a>
 	                </li>
 
 	                <li class="nav-item">
-	                    <a class="nav-link" data-toggle="tab" href="#drinks" role="tab">Drinks</a>
+	                    <a class="nav-link" data-toggle="tab" href="#drinks" role="tab">Péntek</a>
 	                </li>
 	            </ul>
 
@@ -201,221 +201,39 @@
 	                    <div class="wrap-slick2">
 	                        <div class="slick2">
 
+	                            <?php foreach ($getmonday as $monday) : ?>
 	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-01.jpg');">
+	                                <div class="block1"
+	                                    style="background-image: url('karaKrisz/img/weekly-menu-bg-2.jpg');">
+
 	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
+
 	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-01.jpg" alt="IMG-MENU"></a>
+	                                            <a><img src="karaKrisz/img/weekly-menu-bg.jpg" alt="IMG-MENU"></a>
 	                                        </div>
 
 	                                        <div class="block1-txt p-t-8">
 	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Spacial
+	                                                <a class="trans-04">
+	                                                    <?php esc($monday["monday_name"]) ?>
 	                                                </a>
 	                                            </h4>
 
 	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+	                                                <?php esc($monday["monday_characterization"]) ?>
 	                                            </p>
 
 	                                            <span class="txt-center trans-04">
 	                                                $18
 	                                            </span>
 	                                        </div>
+
 	                                    </div>
 	                                </div>
 	                            </div>
+	                            <?php endforeach; ?>
 
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-02.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-02.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Simple
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-03.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-03.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Custom
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $14
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-04.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-04.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Salmon
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-01.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-01.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Spacial
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $18
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-02.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-02.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Simple
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-03.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-03.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Custom
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $14
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-04.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-04.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Salmon
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
 	                        </div>
 	                    </div>
 	                </div>
@@ -426,167 +244,39 @@
 	                    <div class="wrap-slick2">
 	                        <div class="slick2">
 
+	                            <?php foreach ($gettuesday as $tuesday) : ?>
 	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-02.jpg');">
+	                                <div class="block1"
+	                                    style="background-image: url('karaKrisz/img/weekly-menu-bg-2.jpg');">
+
 	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
+
 	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-02.jpg" alt="IMG-MENU"></a>
+	                                            <a><img src="karaKrisz/img/weekly-menu-bg.jpg" alt="IMG-MENU"></a>
 	                                        </div>
 
 	                                        <div class="block1-txt p-t-8">
 	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Simple
+	                                                <a class="trans-04">
+	                                                    <?php esc($tuesday["tuesday_name"]) ?>
 	                                                </a>
 	                                            </h4>
 
 	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-03.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-03.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Custom
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $14
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-04.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-04.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Salmon
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-01.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-01.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Spacial
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+	                                                <?php esc($tuesday["tuesday_characterization"]) ?>
 	                                            </p>
 
 	                                            <span class="txt-center trans-04">
 	                                                $18
 	                                            </span>
 	                                        </div>
+
 	                                    </div>
 	                                </div>
 	                            </div>
+	                            <?php endforeach; ?>
 
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-03.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-03.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Custom
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $14
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-04.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-04.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Salmon
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
 	                        </div>
 	                    </div>
 	                </div>
@@ -597,194 +287,39 @@
 	                    <div class="wrap-slick2">
 	                        <div class="slick2">
 
+	                            <?php foreach ($getwednesday as $wednesday) : ?>
 	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-04.jpg');">
+	                                <div class="block1"
+	                                    style="background-image: url('karaKrisz/img/weekly-menu-bg-2.jpg');">
+
 	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
+
 	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-04.jpg" alt="IMG-MENU"></a>
+	                                            <a><img src="karaKrisz/img/weekly-menu-bg.jpg" alt="IMG-MENU"></a>
 	                                        </div>
 
 	                                        <div class="block1-txt p-t-8">
 	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Salmon
+	                                                <a class="trans-04">
+	                                                    <?php esc($wednesday["wednesday_name"]) ?>
 	                                                </a>
 	                                            </h4>
 
 	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-03.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-03.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Custom
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $14
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-01.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-01.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Spacial
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+	                                                <?php esc($wednesday["wednesday_characterization"]) ?>
 	                                            </p>
 
 	                                            <span class="txt-center trans-04">
 	                                                $18
 	                                            </span>
 	                                        </div>
+
 	                                    </div>
 	                                </div>
 	                            </div>
+	                            <?php endforeach; ?>
 
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-02.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-02.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Simple
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-03.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-03.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Custom
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $14
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-01.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-01.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Spacial
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $18
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-02.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-02.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Simple
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
 	                        </div>
 	                    </div>
 	                </div>
@@ -795,221 +330,39 @@
 	                    <div class="wrap-slick2">
 	                        <div class="slick2">
 
+	                            <?php foreach ($getthursday as $thursday) : ?>
 	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-01.jpg');">
+	                                <div class="block1"
+	                                    style="background-image: url('karaKrisz/img/weekly-menu-bg-2.jpg');">
+
 	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
+
 	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-01.jpg" alt="IMG-MENU"></a>
+	                                            <a><img src="karaKrisz/img/weekly-menu-bg.jpg" alt="IMG-MENU"></a>
 	                                        </div>
 
 	                                        <div class="block1-txt p-t-8">
 	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Spacial
+	                                                <a class="trans-04">
+	                                                    <?php esc($thursday["thursday_name"]) ?>
 	                                                </a>
 	                                            </h4>
 
 	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+	                                                <?php esc($thursday["thursday_characterization"]) ?>
 	                                            </p>
 
 	                                            <span class="txt-center trans-04">
 	                                                $18
 	                                            </span>
 	                                        </div>
+
 	                                    </div>
 	                                </div>
 	                            </div>
+	                            <?php endforeach; ?>
 
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-02.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-02.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Simple
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-03.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-03.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Custom
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $14
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-04.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-04.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Salmon
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-01.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-01.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Spacial
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $18
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-02.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-02.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Simple
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-03.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-03.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Custom
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $14
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-04.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-04.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Salmon
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1020,194 +373,39 @@
 	                    <div class="wrap-slick2">
 	                        <div class="slick2">
 
+	                            <?php foreach ($getfriday as $friday) : ?>
 	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-04.jpg');">
+	                                <div class="block1"
+	                                    style="background-image: url('karaKrisz/img/weekly-menu-bg-2.jpg');">
+
 	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
+
 	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-04.jpg" alt="IMG-MENU"></a>
+	                                            <a><img src="karaKrisz/img/weekly-menu-bg.jpg" alt="IMG-MENU"></a>
 	                                        </div>
 
 	                                        <div class="block1-txt p-t-8">
 	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Salmon
+	                                                <a class="trans-04">
+	                                                    <?php esc($friday["friday_name"]) ?>
 	                                                </a>
 	                                            </h4>
 
 	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-03.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-03.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Custom
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $14
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-01.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-01.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Spacial
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+	                                                <?php esc($friday["friday_characterization"]) ?>
 	                                            </p>
 
 	                                            <span class="txt-center trans-04">
 	                                                $18
 	                                            </span>
 	                                        </div>
+
 	                                    </div>
 	                                </div>
 	                            </div>
+	                            <?php endforeach; ?>
 
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-02.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-02.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Simple
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-03.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-03.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Custom
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Anyone who loves or pursues or desires to obtain pain.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $14
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-01.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-01.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Spacial
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $18
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-
-	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-	                                <!-- Block1 -->
-	                                <div class="block1" style="background-image: url('images/m-img-menu-02.jpg');">
-	                                    <div class="block1-content p-l-15 p-r-15 p-t-17 p-b-30 trans-05">
-	                                        <div class="block1-pic">
-	                                            <a href="#"><img src="images/s-img-menu-02.jpg" alt="IMG-MENU"></a>
-	                                        </div>
-
-	                                        <div class="block1-txt p-t-8">
-	                                            <h4 class="txt-center p-b-11">
-	                                                <a href="#" class="trans-04">
-	                                                    Salad Simple
-	                                                </a>
-	                                            </h4>
-
-	                                            <p class="txt-center p-b-10 trans-04">
-	                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
-	                                            </p>
-
-	                                            <span class="txt-center trans-04">
-	                                                $12
-	                                            </span>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1220,11 +418,11 @@
 	<section class="sec-gallery bg2 p-t-90 p-b-110">
 	    <div class="p-l-15 p-r-15 p-b-48">
 	        <h3 class="l2-txt1 txt-center p-b-2">
-	            Gallery
+	            Képtár
 	        </h3>
 
 	        <p class="m3-txt1 txt-center">
-	            Sweet & Perfect
+	            Szeretettel köszöntjük honlapunkon!
 	        </p>
 	    </div>
 
@@ -1273,7 +471,7 @@
 
 	<!-- Book a table -->
 	<section class="sec-booking bg-img1 p-b-120 p-l-15 p-r-15" style="background-image: url('images/icons/bg-01.jpg');">
-	    <div class="how1 bg1 p-t-70 p-b-70 p-l-30 p-r-30">
+	    <div class="how1 bg1 p-t-70 p-b-70 p-l-30 p-r-30 sec-booking__div">
 	        <div class="p-b-23">
 	            <h3 class="l2-txt2 txt-center p-b-2">
 	                Book A Table

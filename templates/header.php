@@ -8,14 +8,14 @@
 
 	                <!-- Logo desktop -->
 	                <div class="logo">
-	                    <a href="index.html"><img src="images/icons/logo01.png" alt="IMG-LOGO"></a>
+	                    <a href="/"><img src="karaKrisz/img/logo.png" alt="IMG-LOGO"></a>
 	                </div>
 
 	                <!-- Menu desktop -->
 	                <div class="menu-desktop">
 	                    <ul class="main-menu">
 	                        <li>
-	                            <a href="index.html">Home</a>
+	                            <a href="/">Kezdőlap</a>
 	                            <ul class="sub-menu">
 	                                <li><a href="index.html">Homepage 1</a></li>
 	                                <li><a href="home-02.html">Homepage 2</a></li>
@@ -24,7 +24,7 @@
 	                        </li>
 
 	                        <li>
-	                            <a href="course-list.html">Menus</a>
+	                            <a target="_blank" href="/etlap">Ételek, italok</a>
 	                            <ul class="sub-menu">
 	                                <li><a href="menu-01.html">Menu 1</a></li>
 	                                <li><a href="menu-02.html">Menu 2</a></li>
@@ -35,14 +35,14 @@
 	                        </li>
 
 	                        <li>
-	                            <a href="#">Featured</a>
+	                            <a target="_blank" href="/kassai-volgy">Kassai Völgy</a>
 	                            <ul class="sub-menu">
 	                                <li><a href="gallery.html">Gallery</a></li>
 	                            </ul>
 	                        </li>
 
 	                        <li>
-	                            <a href="#">Reservation</a>
+	                            <a target="_blank" href="/panzio">Panzió</a>
 	                            <ul class="sub-menu">
 	                                <li><a href="reservation-01.html">Reservation 1</a></li>
 	                                <li><a href="reservation-02.html">Reservation 2</a></li>
@@ -51,11 +51,11 @@
 	                        </li>
 
 	                        <li>
-	                            <a href="about.html">About</a>
+	                            <a target="_blank" href="/rolunk">Rólunk</a>
 	                        </li>
 
 	                        <li>
-	                            <a href="#">Blog</a>
+	                            <a href="#">Rendezvények</a>
 	                            <ul class="sub-menu">
 	                                <li><a href="blog-grid-01.html">Blog Grid 1</a></li>
 	                                <li><a href="blog-grid-02.html">Blog Grid 2</a></li>
@@ -65,13 +65,13 @@
 	                        </li>
 
 	                        <li>
-	                            <a href="contact.html">Contact</a>
+	                            <a target="_blank" href="/kapcsolat">Kapcsolat</a>
 	                        </li>
 	                    </ul>
 	                </div>
 
 	                <!-- Search desktop -->
-	                <div class="search-desktop">
+	                <div class="search-desktop d-none">
 	                    <button class="btn-show-modal-search js-show-modal-search">
 	                        <i class="fa fa-search" aria-hidden="true"></i>
 	                    </button>
@@ -86,11 +86,11 @@
 	    <div class="wrap-header-mobile">
 	        <!-- Logo moblie -->
 	        <div class="logo-mobile">
-	            <a href="index.html"><img src="images/icons/logo02.png" alt="IMG-LOGO"></a>
+	            <a href="/"><img src="karaKrisz/img/logo.png" alt="IMG-LOGO"></a>
 	        </div>
 
 	        <!-- Search desktop -->
-	        <div class="search-desktop">
+	        <div class="search-desktop d-none">
 	            <button class="btn-show-modal-search js-show-modal-search">
 	                <i class="fa fa-search" aria-hidden="true"></i>
 	            </button>
@@ -110,7 +110,7 @@
 	    <div class="menu-mobile">
 	        <ul class="main-menu-m">
 	            <li>
-	                <a href="index.html">Home</a>
+	                <a href="/">Kezdőlap</a>
 	                <ul class="sub-menu-m">
 	                    <li><a href="index.html">Homepage 1</a></li>
 	                    <li><a href="home-02.html">Homepage 2</a></li>
@@ -122,7 +122,7 @@
 	            </li>
 
 	            <li>
-	                <a href="course-list.html">Menus</a>
+	                <a target="_blank" href="/etlap">Ételek, italok</a>
 	                <ul class="sub-menu-m">
 	                    <li><a href="menu-01.html">Menu 1</a></li>
 	                    <li><a href="menu-02.html">Menu 2</a></li>
@@ -136,7 +136,7 @@
 	            </li>
 
 	            <li>
-	                <a href="#">Featured</a>
+	                <a target="_blank" href="kassai-volgy">Kassai Völgy</a>
 	                <ul class="sub-menu-m">
 	                    <li><a href="gallery.html">Gallery</a></li>
 	                </ul>
@@ -146,7 +146,7 @@
 	            </li>
 
 	            <li>
-	                <a href="#">Reservation</a>
+	                <a target="_blank" href="/panzio">Panzió</a>
 	                <ul class="sub-menu-m">
 	                    <li><a href="reservation-01.html">Reservation 1</a></li>
 	                    <li><a href="reservation-02.html">Reservation 2</a></li>
@@ -158,11 +158,11 @@
 	            </li>
 
 	            <li>
-	                <a href="about.html">About</a>
+	                <a target="_blank" href="/rolunk">Rólunk</a>
 	            </li>
 
 	            <li>
-	                <a href="#">Blog</a>
+	                <a href="#">Rendezvények</a>
 	                <ul class="sub-menu-m">
 	                    <li><a href="blog-grid-01.html">Blog Grid 1</a></li>
 	                    <li><a href="blog-grid-02.html">Blog Grid 2</a></li>
@@ -175,7 +175,7 @@
 	            </li>
 
 	            <li>
-	                <a href="contact.html">Contact</a>
+	                <a target="_blank" href="/kapcsolat">Kapcsolat</a>
 	            </li>
 	        </ul>
 	    </div>

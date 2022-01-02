@@ -1,80 +1,294 @@
 /********************  karaKrisz formating start **********************/
 
-/********************  Header Top Left start **********************/
-
-.listnone--d-none {
-    display: none;
+.d-flex {
+    display: flex;
 }
 
-/********************  Color Switcher start **********************/
-
-.color-switcher {
-    display: none;
+.karaKrisz--link-formating {
+    max-width: max-content;
+    padding: 0 20px;
 }
 
-/********************  Header Top Right Social start **********************/
+.karaKrisz--link-formating:hover {
+    border: 1px solid #ffa414;
+}
 
-.listnone__login-li {
+.btn-primary {
+    background-color: #F02D3A;
+    padding: 15px;
+    border: 0;
+    margin: 25px 0 0 0;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    color: white;
+    border: 1px solid #F02D3A;
+}
+
+.btn.btn-danger.float-right {
+    position: relative;
+    bottom: 55px;
+}
+
+
+/********************  Header content start **********************/
+
+.sub-menu,
+.sub-menu-m,
+.arrow-main-menu-m {
     display: none !important;
 }
 
-.listnone__reg-li {
-    display: none !important;
-}
 
-.listnone__user-data-li {
-    display: none !important;
-}
+/********************  Header content end **********************/
 
-/********************  Advanced Search start **********************/
 
-.advance-search {
-    display: none !important;
-}
+/********************  Menu content start **********************/
 
-/********************  Follow Us start **********************/
-
-.footer-top .widget.socail-icons li a.Instagram {
-    background-color: red !important;
-}
-
-iframe {
+.block1-pic img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
+
+
+/********************  Menu content end **********************/
+
+
+/********************  Book a table content start **********************/
+
+.sec-booking__div {
+    display: none;
+}
+
+
+/********************  Book a table content end **********************/
+
+
+/********************  Footer content start **********************/
+
+.footer__link__img {
+    height: 200px;
+    width: 180px;
+}
+
+.footer__contact-link {
+    color: #666;
+}
+
+.footer_copyright-link {
+    color: #ffa414;
+    font-size: 16px;
+}
+
+.footer__contact-link--c-white {
+    color: white !important;
+}
+
+
+/********************  Footer content end **********************/
+
+
+/********************  Admin content start **********************/
+
+.admin-section-content {
+    background-color: #333;
+    text-align: center;
+    padding: 200px 0;
+}
+
+
+/********************  Admin content end **********************/
+
+
+/********************  Weekly menu recording content start **********************/
+
+.food_options__alert {
+    margin: -60px 0 40px 0;
+}
+
+.food_options__alert__p {
+    font-family: 'Montserrat-SemiBold';
+}
+
+.food_options.text-center {
+    padding: 200px 0;
+    background: #333;
+}
+
+.food_options h2 {
+    background-color: #ffa414;
+    color: white;
+    padding: 30px 10px;
+    margin: 0 0 100px 0;
+}
+
+.food_options label {
+    font-family: "Josefin Sans", sans-serif;
+    color: #F4EDED;
+    font-size: 22px;
+    margin: 0 0 20px 0;
+}
+
+.form-group input {
+    top: 0;
+    height: 65px;
+    width: 100%;
+    padding: 0 53px;
+    box-sizing: border-box;
+    z-index: 3;
+    color: #1a6fc4;
+    font-size: 17px;
+    transition: top 0.1s ease-in-out;
+    margin: 0 0 40px 0;
+}
+
+.form-group input::placeholder {
+    color: rgba(0, 0, 0, 0);
+}
+
+.food_options-ul {
+    border: 0;
+    border-bottom: 1px solid #F4EDED;
+}
+
+.food_options-ul>li>a {
+    background-color: #ffa414;
+    color: #fff;
+    text-decoration-line: none;
+    position: relative;
+    display: block;
+    padding: 20px;
+    width: max-content;
+    margin-right: 20px;
+}
+
+.food_options-ul>li>a:hover {
+    background-color: white;
+    color: #ffa414;
+    border: 1px solid #ffa414;
+    border-bottom: 0;
+}
+
+.food_options-ul>li>a:focus {
+    background-color: white;
+    color: #ffa414;
+    border: 1px solid #ffa414;
+    border-bottom: 0;
+}
+
+.tab-content {
+    padding: 30px;
+}
+
+.modal-header {
+    background-color: #ffa414;
+    color: white;
+}
+
+.modal-body h3 {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.food-delete-box__btn {
+    background: red;
+    color: white;
+    margin: 10px 0 15px 0;
+}
+
+.inserted-alert-success {
+    display: none;
+}
+
+
+/********************  Weekly menu recording content end **********************/
+
+
+/********************  Title page (etlap) content start **********************/
+
+.l1-txt2 {
+    font-size: 30px;
+}
+
+.sec-menu__ul__li__div__span__strong {
+    font-size: 20px;
+}
+
+
+/********************  Title page (etlap) content end **********************/
+
+
+/********************  Title page (contact) content start **********************/
+
+.map__iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.map--style {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+/********************  Title page (contact) content start **********************/
+
 
 /********************  Media start **********************/
 
 @media screen and (max-width: 767px) {
-
-    #banner {
-        background-position-y: 0;
+    .food_options.text-center {
+        padding: 100px 0;
     }
-
-    .listnone {
-        display: none;
+    .food_options-ul {
+        flex-direction: column;
     }
-
-    .colored-header {
-        position: fixed;
-        z-index: 100;
-        background: white;
+    .food_options-ul>li>a {
         width: 100%;
-        padding: 0px 10px;
+        margin-bottom: 20px;
     }
-
-    .services-grid {
-        text-align: center;
+    .next-slick4,
+    .next-slick2 {
+        right: -16px !important;
     }
-
-    .services-center .services-grid .icons i,
-    .services-grid .icons i {
-        margin: auto;
-        margin-bottom: 30px;
+    .prev-slick4,
+    .prev-slick2 {
+        left: -15px !important;
     }
-
-    .pl-12 {
-        position: relative;
-        left: 12px;
+    .l1-txt2 {
+        font-size: 22px;
+    }
+    .footer__link__img {
+        height: 150px;
+        width: 140px;
+        margin: -100px 0 0 0;
+    }
+    .food_options__alert {
+        margin: -60px 0 40px 0;
+        padding: 35px 0;
+    }
+    .food_options__alert__p {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 18px;
+    }
+    .d-flex {
+        flex-direction: column;
+    }
+    .admin-section-content {
+        padding: 70px 0 20px 0;
+    }
+    .flex-c-m.s1-txt1.size6.bg1.how-btn1.trans-04.m-lr-auto.karaKrisz--link-formating {
+        margin-bottom: 50px;
     }
 }
+
+
+/********************  Media end **********************/
+
+
+/********************  karaKrisz formating end **********************/
