@@ -15,6 +15,7 @@ route('/kapcsolat', 'contactController');
 route('/administ', 'adminController');
 route('/weekly-menu-recording', 'weeklyMenuRecordingController');
 route('/menu-recording', 'menuRecordingController');
+route('/events', 'eventsRecordingController');
 
 route('/mondaySubmit', 'mondaySubmitController', "POST");
 route('/weekly-menu-recording/(?<id>[\d]+)/mondaydelete', 'mondayDeleteController', "POST");
@@ -52,6 +53,31 @@ route('/menu-recording/(?<id>[\d]+)/homemadePicklesdelete', 'homemadePicklesDele
 route('/gallery-recording', 'galleryRecordingController');
 route('/galleryRecordingSubmit', 'galleryRecordingSubmitController', "POST");
 
+route('/kaposMenuSubmit', 'kaposMenuSubmitController', "POST");
+route('/events/(?<id>[\d]+)/kaposMenudelete', 'kaposMenuDeleteController', "POST");
+
+route('/familyMenuSubmit', 'familyMenuSubmitController', "POST");
+route('/events/(?<id>[\d]+)/familyMenudelete', 'familyMenuDeleteController', "POST");
+
+route('/kassaiMenuSubmit', 'kassaiMenuSubmitController', "POST");
+route('/events/(?<id>[\d]+)/kassaiMenudelete', 'kassaiMenuDeleteController', "POST");
+
+route('/zseleciMenuSubmit', 'zseleciMenuSubmitController', "POST");
+route('/events/(?<id>[\d]+)/zseleciMenudelete', 'zseleciMenuDeleteController', "POST");
+
+route('/meroMenuSubmit', 'meroMenuSubmitController', "POST");
+route('/events/(?<id>[\d]+)/meroMenudelete', 'meroMenuDeleteController', "POST");
+
+route('/vegetarianMenuSubmit', 'vegetarianMenuSubmitController', "POST");
+route('/events/(?<id>[\d]+)/vegetarianMenudelete', 'vegetarianMenuDeleteController', "POST");
+
+route('/classicMenuSubmit', 'classicMenuSubmitController', "POST");
+route('/events/(?<id>[\d]+)/classicMenudelete', 'classicMenuDeleteController', "POST");
+
+route('/weddingMenuSubmit', 'weddingMenuSubmitController', "POST");
+route('/events/(?<id>[\d]+)/weddingMenudelete', 'weddingMenuDeleteController', "POST");
+
+route('/addImageSubmit', 'imageSubmitController', "POST");
 
 
 list($view, $data) = dispatch($cleaned, 'notFoundController');

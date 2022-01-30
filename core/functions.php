@@ -1,6 +1,5 @@
 <?php
 
-
 function logMessage($level, $message)
 {
     $backtrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 2)[0];
@@ -455,6 +454,318 @@ function homemadePicklesDelete($connection, $id)
         errorPage();
     }
 }
+
+function kaposMenuAppend($connection, $kaposMenu_name, $kaposMenu_characterization)
+{
+    if ($statement = mysqli_prepare($connection, 'INSERT INTO kaposMenu (kaposMenu_name,kaposMenu_characterization) VALUES (?,?)')) {
+        mysqli_stmt_bind_param($statement, 'ss', $kaposMenu_name, $kaposMenu_characterization);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function kaposMenu($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from kaposMenu')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+
+function kaposMenuDelete($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'DELETE FROM kaposMenu WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, 'i', $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function familyMenuAppend($connection, $familyMenu_name, $familyMenu_characterization)
+{
+    if ($statement = mysqli_prepare($connection, 'INSERT INTO familyMenu (familyMenu_name,familyMenu_characterization) VALUES (?,?)')) {
+        mysqli_stmt_bind_param($statement, 'ss', $familyMenu_name, $familyMenu_characterization);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function familyMenu($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from familyMenu')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+
+function familyMenuDelete($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'DELETE FROM familyMenu WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, 'i', $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function kassaiMenuAppend($connection, $kassaiMenu_name, $kassaiMenu_characterization)
+{
+    if ($statement = mysqli_prepare($connection, 'INSERT INTO kassaiMenu (kassaiMenu_name,kassaiMenu_characterization) VALUES (?,?)')) {
+        mysqli_stmt_bind_param($statement, 'ss', $kassaiMenu_name, $kassaiMenu_characterization);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function kassaiMenu($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from kassaiMenu')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+
+function kassaiMenuDelete($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'DELETE FROM kassaiMenu WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, 'i', $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function zseleciMenuAppend($connection, $zseleciMenu_name, $zseleciMenu_characterization)
+{
+    if ($statement = mysqli_prepare($connection, 'INSERT INTO zseleciMenu (zseleciMenu_name,zseleciMenu_characterization) VALUES (?,?)')) {
+        mysqli_stmt_bind_param($statement, 'ss', $zseleciMenu_name, $zseleciMenu_characterization);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function zseleciMenu($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from zseleciMenu')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+
+function zseleciMenuDelete($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'DELETE FROM zseleciMenu WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, 'i', $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function meroMenuAppend($connection, $meroMenu_name, $meroMenu_characterization)
+{
+    if ($statement = mysqli_prepare($connection, 'INSERT INTO meroMenu (meroMenu_name,meroMenu_characterization) VALUES (?,?)')) {
+        mysqli_stmt_bind_param($statement, 'ss', $meroMenu_name, $meroMenu_characterization);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function meroMenu($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from meroMenu')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+
+function meroMenuDelete($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'DELETE FROM meroMenu WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, 'i', $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function vegetarianMenuAppend($connection, $vegetarianMenu_name, $vegetarianMenu_characterization)
+{
+    if ($statement = mysqli_prepare($connection, 'INSERT INTO vegetarianMenu (vegetarianMenu_name,vegetarianMenu_characterization) VALUES (?,?)')) {
+        mysqli_stmt_bind_param($statement, 'ss', $vegetarianMenu_name, $vegetarianMenu_characterization);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function vegetarianMenu($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from vegetarianMenu')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+
+function vegetarianMenuDelete($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'DELETE FROM vegetarianMenu WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, 'i', $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+function classicMenuAppend($connection, $classicMenu_name, $classicMenu_characterization)
+{
+    if ($statement = mysqli_prepare($connection, 'INSERT INTO classicMenu (classicMenu_name,classicMenu_characterization) VALUES (?,?)')) {
+        mysqli_stmt_bind_param($statement, 'ss', $classicMenu_name, $classicMenu_characterization);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function classicMenu($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from classicMenu')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+
+function classicMenuDelete($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'DELETE FROM classicMenu WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, 'i', $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function weddingMenuAppend($connection, $weddingMenu_name, $weddingMenu_characterization)
+{
+    if ($statement = mysqli_prepare($connection, 'INSERT INTO weddingMenu (weddingMenu_name,weddingMenu_characterization) VALUES (?,?)')) {
+        mysqli_stmt_bind_param($statement, 'ss', $weddingMenu_name, $weddingMenu_characterization);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function weddingMenu($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from weddingMenu')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+
+function weddingMenuDelete($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'DELETE FROM weddingMenu WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, 'i', $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function imageAppend($connection, $image)
+{
+    if ($statement = mysqli_prepare($connection, 'INSERT INTO image (image) VALUES (?)')) {
+        $null = null;
+        mysqli_stmt_bind_param($statement, 'b', $null);
+        mysqli_stmt_send_long_data($statement, 0, file_get_contents($image));
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
 
 // var_dump($_SESSION);
 // die;

@@ -104,13 +104,40 @@ function contactController()
 function galleryRecordingController()
 {
 
+    $connection = getConnection();
+
+    $imgFixed = array_key_exists("imgFixed", $_SESSION);
+    unset($_SESSION["imgFixed"]);
+
+    $dataDelete = array_key_exists("dataDelete", $_SESSION);
+    unset($_SESSION["dataDelete"]);
+
+
     return [
         "gallery-recording",
         [
-            "title" => "Képek rögzítése"
+            "title" => "Képek rögzítése",
+            "imgFixed"=> $imgFixed,
+            "dataDelete" => $dataDelete
         ]
     ];
     
+}
+
+function imageSubmitController()
+{
+    $filename = $_FILES["image"]["name"];
+    $image_file = $_FILES["image"]["tmp_name"];
+    $folder = __DIR__ . "/../imagesuploaded/";
+    move_uploaded_file($image_file, $folder . $filename);
+    $connection = getConnection();
+    imageAppend($connection, $folder . $filename);
+
+    $_SESSION["imgFixed"] = 1;
+    
+    return [
+        "redirect:/gallery-recording", [],
+    ];
 }
 
 
@@ -137,6 +164,9 @@ function weeklyMenuRecordingController()
 
     $foodFixed = array_key_exists("foodFixed", $_SESSION);
     unset($_SESSION["foodFixed"]);
+
+    $dataDelete = array_key_exists("dataDelete", $_SESSION);
+    unset($_SESSION["dataDelete"]);
     
     return [
         "weekly-menu-recording",
@@ -147,7 +177,8 @@ function weeklyMenuRecordingController()
             "getwednesday" => $getwednesday,
             "getthursday" => $getthursday,
             "getfriday" => $getfriday,
-            "foodFixed" => $foodFixed
+            "foodFixed" => $foodFixed,
+            "dataDelete" => $dataDelete
         ]
     ];
     
@@ -175,6 +206,8 @@ function mondayDeleteController($params)
     $connection = getConnection();
     
     mondayDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
     
     return [
         "redirect:/weekly-menu-recording",
@@ -204,6 +237,8 @@ function tuesdayDeleteController($params)
     $connection = getConnection();
     
     tuesdayDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
     
     return [
         "redirect:/weekly-menu-recording",
@@ -264,6 +299,8 @@ function thursdayDeleteController($params)
     $connection = getConnection();
     
     thursdayDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
     
     return [
         "redirect:/weekly-menu-recording",
@@ -293,6 +330,8 @@ function fridayDeleteController($params)
     $connection = getConnection();
     
     fridayDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
     
     return [
         "redirect:/weekly-menu-recording",
@@ -314,6 +353,9 @@ function menuRecordingController()
 
     $foodFixed = array_key_exists("foodFixed", $_SESSION);
     unset($_SESSION["foodFixed"]);
+
+    $dataDelete = array_key_exists("dataDelete", $_SESSION);
+    unset($_SESSION["dataDelete"]);
     
 
     return [
@@ -326,7 +368,8 @@ function menuRecordingController()
             "getdesserts" => $getdesserts,
             "getgarnishes" => $getgarnishes,
             "gethomemadePickles" => $gethomemadePickles,
-            "foodFixed" => $foodFixed
+            "foodFixed" => $foodFixed,
+            "dataDelete" => $dataDelete
         ]
     ];
     
@@ -354,6 +397,8 @@ function soupDeleteController($params)
     $connection = getConnection();
     
     soupDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
     
     return [
         "redirect:/menu-recording",
@@ -385,6 +430,8 @@ function hungarianDishesDeleteController($params)
     $connection = getConnection();
     
     hungarianDishesDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
     
     return [
         "redirect:/menu-recording",
@@ -415,6 +462,8 @@ function mainCoursesDeleteController($params)
     $connection = getConnection();
     
     mainCoursesDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
     
     return [
         "redirect:/menu-recording",
@@ -446,6 +495,8 @@ function dessertsDeleteController($params)
     
     dessertsDelete($connection, $params["id"]);
     
+    $_SESSION["dataDelete"] = 1;
+    
     return [
         "redirect:/menu-recording",
         []
@@ -475,6 +526,8 @@ function garnishesDeleteController($params)
     $connection = getConnection();
     
     garnishesDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
     
     return [
         "redirect:/menu-recording",
@@ -506,6 +559,8 @@ function homemadePicklesDeleteController($params)
     $connection = getConnection();
     
     homemadePicklesDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
     
     return [
         "redirect:/menu-recording",
@@ -513,6 +568,293 @@ function homemadePicklesDeleteController($params)
     ];
     
 }
+
+function eventsRecordingController()
+{
+    $connection = getConnection();
+
+    $getkaposMenu = kaposMenu($connection);
+    $getfamilyMenu = familyMenu($connection);
+    $getkassaiMenu = kassaiMenu($connection);
+    $getzseleciMenu = zseleciMenu($connection);
+    $getmeroMenu = meroMenu($connection);
+    $getvegetarianMenu = vegetarianMenu($connection);
+    $getclassicMenu = classicMenu($connection);
+    $getweddingMenu = weddingMenu($connection);
+
+    $foodFixed = array_key_exists("foodFixed", $_SESSION);
+    unset($_SESSION["foodFixed"]);
+
+    $dataDelete = array_key_exists("dataDelete", $_SESSION);
+    unset($_SESSION["dataDelete"]);
+    
+    return [
+        "events",
+        [
+            "title" => "Rendezvényi ételek rögzítése",
+            "foodFixed" => $foodFixed,
+            "getkaposMenu" => $getkaposMenu,
+            "getfamilyMenu" => $getfamilyMenu,
+            "getkassaiMenu" => $getkassaiMenu,
+            "getzseleciMenu" => $getzseleciMenu,
+            "getmeroMenu" => $getmeroMenu,
+            "getvegetarianMenu" => $getvegetarianMenu,
+            "getclassicMenu" => $getclassicMenu,
+            "getweddingMenu" => $getweddingMenu,
+            "dataDelete" => $dataDelete 
+        ]
+    ];
+    
+}
+
+function kaposMenuSubmitController()
+{
+    $connection = getConnection();
+    
+    $kaposMenu_name = $_POST['kaposMenu_name'];
+    $kaposMenu_characterization = $_POST['kaposMenu_characterization'];
+    kaposMenuAppend($connection, $kaposMenu_name, $kaposMenu_characterization);
+            
+    $_SESSION["foodFixed"] = 1;
+    
+    return [
+        "redirect:/events", []
+    ];
+    
+}
+
+function kaposMenuDeleteController($params)
+{
+    $connection = getConnection();
+    
+    kaposMenuDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
+    
+    return [
+        "redirect:/events",
+        []
+    ];
+    
+}
+
+function familyMenuSubmitController()
+{
+    $connection = getConnection();
+    
+    $familyMenu_name = $_POST['familyMenu_name'];
+    $familyMenu_characterization = $_POST['familyMenu_characterization'];
+    familyMenuAppend($connection, $familyMenu_name, $familyMenu_characterization);
+            
+    $_SESSION["foodFixed"] = 1;
+    
+    return [
+        "redirect:/events", []
+    ];
+    
+}
+
+function familyMenuDeleteController($params)
+{
+    $connection = getConnection();
+    
+    familyMenuDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
+    
+    return [
+        "redirect:/events",
+        []
+    ];
+    
+}
+
+function kassaiMenuSubmitController()
+{
+    $connection = getConnection();
+    
+    $kassaiMenu_name = $_POST['kassaiMenu_name'];
+    $kassaiMenu_characterization = $_POST['kassaiMenu_characterization'];
+    kassaiMenuAppend($connection, $kassaiMenu_name, $kassaiMenu_characterization);
+            
+    $_SESSION["foodFixed"] = 1;
+    
+    return [
+        "redirect:/events", []
+    ];
+    
+}
+
+function kassaiMenuDeleteController($params)
+{
+    $connection = getConnection();
+    
+    kassaiMenuDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
+    
+    return [
+        "redirect:/events",
+        []
+    ];
+    
+}
+
+function zseleciMenuSubmitController()
+{
+    $connection = getConnection();
+    
+    $zseleciMenu_name = $_POST['zseleciMenu_name'];
+    $zseleciMenu_characterization = $_POST['zseleciMenu_characterization'];
+    zseleciMenuAppend($connection, $zseleciMenu_name, $zseleciMenu_characterization);
+            
+    $_SESSION["foodFixed"] = 1;
+    
+    return [
+        "redirect:/events", []
+    ];
+    
+}
+
+function zseleciMenuDeleteController($params)
+{
+    $connection = getConnection();
+    
+    zseleciMenuDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
+    
+    return [
+        "redirect:/events",
+        []
+    ];
+    
+}
+
+function meroMenuSubmitController()
+{
+    $connection = getConnection();
+    
+    $meroMenu_name = $_POST['meroMenu_name'];
+    $meroMenu_characterization = $_POST['meroMenu_characterization'];
+    meroMenuAppend($connection, $meroMenu_name, $meroMenu_characterization);
+            
+    $_SESSION["foodFixed"] = 1;
+    
+    return [
+        "redirect:/events", []
+    ];
+    
+}
+
+function meroMenuDeleteController($params)
+{
+    $connection = getConnection();
+    
+    meroMenuDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
+    
+    return [
+        "redirect:/events",
+        []
+    ];
+    
+}
+
+function vegetarianMenuSubmitController()
+{
+    $connection = getConnection();
+    
+    $vegetarianMenu_name = $_POST['vegetarianMenu_name'];
+    $vegetarianMenu_characterization = $_POST['vegetarianMenu_characterization'];
+    vegetarianMenuAppend($connection, $vegetarianMenu_name, $vegetarianMenu_characterization);
+            
+    $_SESSION["foodFixed"] = 1;
+    
+    return [
+        "redirect:/events", []
+    ];
+    
+}
+
+function vegetarianMenuDeleteController($params)
+{
+    $connection = getConnection();
+    
+    vegetarianMenuDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
+    
+    return [
+        "redirect:/events",
+        []
+    ];
+    
+}
+
+function classicMenuSubmitController()
+{
+    $connection = getConnection();
+    
+    $classicMenu_name = $_POST['classicMenu_name'];
+    $classicMenu_characterization = $_POST['classicMenu_characterization'];
+    classicMenuAppend($connection, $classicMenu_name, $classicMenu_characterization);
+            
+    $_SESSION["foodFixed"] = 1;
+    
+    return [
+        "redirect:/events", []
+    ];
+    
+}
+
+function classicMenuDeleteController($params)
+{
+    $connection = getConnection();
+    
+    classicMenuDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
+    
+    return [
+        "redirect:/events",
+        []
+    ];
+    
+}
+
+function weddingMenuSubmitController()
+{
+    $connection = getConnection();
+    
+    $weddingMenu_name = $_POST['weddingMenu_name'];
+    $weddingMenu_characterization = $_POST['weddingMenu_characterization'];
+    weddingMenuAppend($connection, $weddingMenu_name, $weddingMenu_characterization);
+            
+    $_SESSION["foodFixed"] = 1;
+    
+    return [
+        "redirect:/events", []
+    ];
+    
+}
+
+function weddingMenuDeleteController($params)
+{
+    $connection = getConnection();
+    
+    weddingMenuDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
+    
+    return [
+        "redirect:/events",
+        []
+    ];
+    
+}
+
 
 
 function notFoundController()

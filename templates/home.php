@@ -6,7 +6,7 @@
 	                <!-- Slide 1 -->
 	                <li data-transition="fade">
 	                    <!--  -->
-	                    <img src="karaKrisz/img/slider.jpeg" alt="IMG-BG" class="rev-slidebg">
+	                    <img src="karaKrisz/img/slider.jpg" alt="IMG-BG" class="rev-slidebg">
 
 	                    <!--  -->
 	                    <div class="tp-caption tp-resizeme flex-c-m flex-w caption-1"
@@ -54,7 +54,7 @@
 	                <!-- Slide 2 -->
 	                <li data-transition="fade">
 	                    <!--  -->
-	                    <img src="karaKrisz/img/slider2.jpeg" alt="IMG-BG" class="rev-slidebg">
+	                    <img src="karaKrisz/img/slider2.jpg" alt="IMG-BG" class="rev-slidebg">
 
 	                    <!--  -->
 	                    <div class="tp-caption tp-resizeme flex-c-m flex-w caption-1"
@@ -102,7 +102,7 @@
 	                <!-- Slide 3 -->
 	                <li data-transition="fade">
 	                    <!--  -->
-	                    <img src="karaKrisz/img/slider3.jpeg" alt="IMG-BG" class="rev-slidebg">
+	                    <img src="karaKrisz/img/slider3.jpg" alt="IMG-BG" class="rev-slidebg">
 
 	                    <!--  -->
 	                    <div class="tp-caption tp-resizeme flex-c-m flex-w caption-1"

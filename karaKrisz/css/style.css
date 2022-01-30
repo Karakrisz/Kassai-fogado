@@ -164,6 +164,10 @@
     margin-right: 20px;
 }
 
+.food_options__elem__link--mr-formating {
+    margin-right: 5px !important;
+}
+
 .food_options-ul>li>a:hover {
     background-color: white;
     color: #ffa414;
@@ -200,6 +204,18 @@
 
 .inserted-alert-success {
     display: none;
+}
+
+.food-delete-box__btn {
+    background: red;
+    color: white;
+    margin: 10px 0 15px 0;
+}
+
+.food_options__img-append-box__form__input {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 80px;
 }
 
 

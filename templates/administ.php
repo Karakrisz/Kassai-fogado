@@ -6,6 +6,9 @@
         <a target="_blank" href="/menu-recording"
             class="flex-c-m s1-txt1 size6 bg1 how-btn1 trans-04 m-lr-auto karaKrisz--link-formating">Étlap</a>
 
+        <a target="_blank" href="/events"
+            class="flex-c-m s1-txt1 size6 bg1 how-btn1 trans-04 m-lr-auto karaKrisz--link-formating">Rendezvények</a>
+
         <a target="_blank" href="/gallery-recording"
             class="flex-c-m s1-txt1 size6 bg1 how-btn1 trans-04 m-lr-auto karaKrisz--link-formating">Képtár</a>
     </div>

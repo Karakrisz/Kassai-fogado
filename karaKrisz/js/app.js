@@ -9,7 +9,7 @@ function run() {
         event.preventDefault();
         var id = $(this).attr("href");
         $("html, body").animate({
-            "scrollTop": $(id).offset().top 
+            "scrollTop": $(id).offset().top
         }, SCROLL_TIME);
     }
 }
