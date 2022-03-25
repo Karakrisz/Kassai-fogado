@@ -7,6 +7,7 @@ $cleaned = explode("?", $uri)[0];
 route('/', 'homeController');
 route('/etlap', 'menuController');
 route('/kassai-volgy', 'kassaiVolgyController');
+route('/rendezvenyek', 'rendezvenyekController');
 route('/panzio', 'panzioController');
 route('/rolunk', 'aboutController');
 route('/kapcsolat', 'contactController');
@@ -16,6 +17,10 @@ route('/administ', 'adminController');
 route('/weekly-menu-recording', 'weeklyMenuRecordingController');
 route('/menu-recording', 'menuRecordingController');
 route('/events', 'eventsRecordingController');
+route('/programmes', 'programmesRecordingController');
+
+route('/programmeSubmit', 'programmeSubmitController', "POST");
+route('/programmes/(?<id>[\d]+)/programmesdelete', 'programmesDeleteController', "POST");
 
 route('/mondaySubmit', 'mondaySubmitController', "POST");
 route('/weekly-menu-recording/(?<id>[\d]+)/mondaydelete', 'mondayDeleteController', "POST");
@@ -77,7 +82,12 @@ route('/events/(?<id>[\d]+)/classicMenudelete', 'classicMenuDeleteController', "
 route('/weddingMenuSubmit', 'weddingMenuSubmitController', "POST");
 route('/events/(?<id>[\d]+)/weddingMenudelete', 'weddingMenuDeleteController', "POST");
 
+route('/drinksSubmit', 'drinksSubmitController', "POST");
+route('/menu-recording/(?<id>[\d]+)/drinksdelete', 'drinksDeleteController', "POST");
+
 route('/addImageSubmit', 'imageSubmitController', "POST");
+
+route('/panzio-gallery-recording', 'panzioGalleryRecordingController');
 
 
 list($view, $data) = dispatch($cleaned, 'notFoundController');

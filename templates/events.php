@@ -1,16 +1,16 @@
 <section class="food_options text-center mt-200">
     <div class="container">
         <h2 class="mb-100">Rendezvényi ételek rögzítése</h2>
-        <?php if($foodFixed): ?>
+        <?php if ($foodFixed): ?>
         <div class="alert alert-success food_options__alert">
             <p class="food_options__alert__p">Az ételt rögzítettük!</p>
         </div>
-        <?php endif ?>
-        <?php if($dataDelete): ?>
+        <?php endif?>
+        <?php if ($dataDelete): ?>
         <div class="alert alert-danger food_options__alert">
             <p class="food_options__alert__p">Az ételt töröltük!</p>
         </div>
-        <?php endif ?>
+        <?php endif?>
         <ul class="food_options-ul nav nav-tabs d-flex justify-content-center">
             <!-- <li class="active">
                 <a href="#tab1" data-toggle="tab">Napi ajánlat</a>
@@ -85,19 +85,19 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getkaposMenu as $kaposMenu) : ?>
+                                        <?php foreach ($getkaposMenu as $kaposMenu): ?>
                                         <form method="POST"
-                                            action="/events/<?php esc($kaposMenu['id'])  ?>/kaposMenudelete">
+                                            action="/events/<?php esc($kaposMenu['id'])?>/kaposMenudelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($kaposMenu["kaposMenu_name"]) ?>
+                                                    <h3 class="text-left"><?php esc($kaposMenu["kaposMenu_name"])?>
                                                     </h3>
                                                     <button type="submit"
                                                         class="btn btn-danger float-right">Törlés</button>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
 
                                     </div>
                                 </div>
@@ -146,19 +146,19 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getfamilyMenu as $familyMenu) : ?>
+                                        <?php foreach ($getfamilyMenu as $familyMenu): ?>
                                         <form method="POST"
-                                            action="/events/<?php esc($familyMenu['id'])  ?>/familyMenudelete">
+                                            action="/events/<?php esc($familyMenu['id'])?>/familyMenudelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($familyMenu["familyMenu_name"]) ?>
+                                                    <h3 class="text-left"><?php esc($familyMenu["familyMenu_name"])?>
                                                     </h3>
                                                     <button type="submit"
                                                         class="btn btn-danger float-right">Törlés</button>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -206,19 +206,19 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getkassaiMenu as $kassaiMenu) : ?>
+                                        <?php foreach ($getkassaiMenu as $kassaiMenu): ?>
                                         <form method="POST"
-                                            action="/events/<?php esc($kassaiMenu['id'])  ?>/kassaiMenudelete">
+                                            action="/events/<?php esc($kassaiMenu['id'])?>/kassaiMenudelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($kassaiMenu["kassaiMenu_name"]) ?>
+                                                    <h3 class="text-left"><?php esc($kassaiMenu["kassaiMenu_name"])?>
                                                     </h3>
                                                     <button type="submit"
                                                         class="btn btn-danger float-right">Törlés</button>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -267,19 +267,19 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getzseleciMenu as $zseleciMenu) : ?>
+                                        <?php foreach ($getzseleciMenu as $zseleciMenu): ?>
                                         <form method="POST"
-                                            action="/events/<?php esc($zseleciMenu['id'])  ?>/zseleciMenudelete">
+                                            action="/events/<?php esc($zseleciMenu['id'])?>/zseleciMenudelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($zseleciMenu["zseleciMenu_name"]) ?>
+                                                    <h3 class="text-left"><?php esc($zseleciMenu["zseleciMenu_name"])?>
                                                     </h3>
                                                     <button type="submit"
                                                         class="btn btn-danger float-right">Törlés</button>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -327,18 +327,18 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getmeroMenu as $meroMenu) : ?>
+                                        <?php foreach ($getmeroMenu as $meroMenu): ?>
                                         <form method="POST"
-                                            action="/events/<?php esc($meroMenu['id'])  ?>/meroMenudelete">
+                                            action="/events/<?php esc($meroMenu['id'])?>/meroMenudelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($meroMenu["meroMenu_name"]) ?></h3>
+                                                    <h3 class="text-left"><?php esc($meroMenu["meroMenu_name"])?></h3>
                                                     <button type="submit"
                                                         class="btn btn-danger float-right">Törlés</button>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -388,19 +388,19 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getvegetarianMenu as $vegetarianMenu) : ?>
+                                        <?php foreach ($getvegetarianMenu as $vegetarianMenu): ?>
                                         <form method="POST"
-                                            action="/events/<?php esc($vegetarianMenu['id'])  ?>/vegetarianMenudelete">
+                                            action="/events/<?php esc($vegetarianMenu['id'])?>/vegetarianMenudelete">
                                             <ul>
                                                 <li>
                                                     <h3 class="text-left">
-                                                        <?php esc($vegetarianMenu["vegetarianMenu_name"]) ?></h3>
+                                                        <?php esc($vegetarianMenu["vegetarianMenu_name"])?></h3>
                                                     <button type="submit"
                                                         class="btn btn-danger float-right">Törlés</button>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -449,19 +449,19 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getclassicMenu as $classicMenu) : ?>
+                                        <?php foreach ($getclassicMenu as $classicMenu): ?>
                                         <form method="POST"
-                                            action="/events/<?php esc($classicMenu['id'])  ?>/classicMenudelete">
+                                            action="/events/<?php esc($classicMenu['id'])?>/classicMenudelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($classicMenu["classicMenu_name"]) ?>
+                                                    <h3 class="text-left"><?php esc($classicMenu["classicMenu_name"])?>
                                                     </h3>
                                                     <button type="submit"
                                                         class="btn btn-danger float-right">Törlés</button>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -510,19 +510,19 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getweddingMenu as $weddingMenu) : ?>
+                                        <?php foreach ($getweddingMenu as $weddingMenu): ?>
                                         <form method="POST"
-                                            action="/events/<?php esc($weddingMenu['id'])  ?>/weddingMenudelete">
+                                            action="/events/<?php esc($weddingMenu['id'])?>/weddingMenudelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($weddingMenu["weddingMenu_name"]) ?>
+                                                    <h3 class="text-left"><?php esc($weddingMenu["weddingMenu_name"])?>
                                                     </h3>
                                                     <button type="submit"
                                                         class="btn btn-danger float-right">Törlés</button>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>

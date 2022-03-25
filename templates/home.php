@@ -78,7 +78,7 @@
 	                        data-whitespace="['normal']" data-paddingtop="[0, 0, 0, 0]"
 	                        data-paddingright="[15, 15, 15, 15]" data-paddingbottom="[0, 0, 0, 0]"
 	                        data-paddingleft="[15, 15, 15, 15]" data-basealign="slide" data-responsive_offset="off">
-	                        Szeretjük a finomat
+	                        Vidéki Vendéglátás Hazája
 	                    </h2>
 
 	                    <!--  -->
@@ -201,7 +201,7 @@
 	                    <div class="wrap-slick2">
 	                        <div class="slick2">
 
-	                            <?php foreach ($getmonday as $monday) : ?>
+	                            <?php foreach ($getmonday as $monday): ?>
 	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 	                                <!-- Block1 -->
 	                                <div class="block1"
@@ -216,12 +216,12 @@
 	                                        <div class="block1-txt p-t-8">
 	                                            <h4 class="txt-center p-b-11">
 	                                                <a class="trans-04">
-	                                                    <?php esc($monday["monday_name"]) ?>
+	                                                    <?php esc($monday["monday_name"])?>
 	                                                </a>
 	                                            </h4>
 
 	                                            <p class="txt-center p-b-10 trans-04">
-	                                                <?php esc($monday["monday_characterization"]) ?>
+	                                                <?php esc($monday["monday_characterization"])?>
 	                                            </p>
 
 	                                            <span class="txt-center trans-04">
@@ -232,7 +232,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                            <?php endforeach; ?>
+	                            <?php endforeach;?>
 
 	                        </div>
 	                    </div>
@@ -244,7 +244,7 @@
 	                    <div class="wrap-slick2">
 	                        <div class="slick2">
 
-	                            <?php foreach ($gettuesday as $tuesday) : ?>
+	                            <?php foreach ($gettuesday as $tuesday): ?>
 	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 	                                <!-- Block1 -->
 	                                <div class="block1"
@@ -259,12 +259,12 @@
 	                                        <div class="block1-txt p-t-8">
 	                                            <h4 class="txt-center p-b-11">
 	                                                <a class="trans-04">
-	                                                    <?php esc($tuesday["tuesday_name"]) ?>
+	                                                    <?php esc($tuesday["tuesday_name"])?>
 	                                                </a>
 	                                            </h4>
 
 	                                            <p class="txt-center p-b-10 trans-04">
-	                                                <?php esc($tuesday["tuesday_characterization"]) ?>
+	                                                <?php esc($tuesday["tuesday_characterization"])?>
 	                                            </p>
 
 	                                            <span class="txt-center trans-04">
@@ -275,7 +275,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                            <?php endforeach; ?>
+	                            <?php endforeach;?>
 
 	                        </div>
 	                    </div>
@@ -287,7 +287,7 @@
 	                    <div class="wrap-slick2">
 	                        <div class="slick2">
 
-	                            <?php foreach ($getwednesday as $wednesday) : ?>
+	                            <?php foreach ($getwednesday as $wednesday): ?>
 	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 	                                <!-- Block1 -->
 	                                <div class="block1"
@@ -302,12 +302,12 @@
 	                                        <div class="block1-txt p-t-8">
 	                                            <h4 class="txt-center p-b-11">
 	                                                <a class="trans-04">
-	                                                    <?php esc($wednesday["wednesday_name"]) ?>
+	                                                    <?php esc($wednesday["wednesday_name"])?>
 	                                                </a>
 	                                            </h4>
 
 	                                            <p class="txt-center p-b-10 trans-04">
-	                                                <?php esc($wednesday["wednesday_characterization"]) ?>
+	                                                <?php esc($wednesday["wednesday_characterization"])?>
 	                                            </p>
 
 	                                            <span class="txt-center trans-04">
@@ -318,7 +318,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                            <?php endforeach; ?>
+	                            <?php endforeach;?>
 
 	                        </div>
 	                    </div>
@@ -330,7 +330,7 @@
 	                    <div class="wrap-slick2">
 	                        <div class="slick2">
 
-	                            <?php foreach ($getthursday as $thursday) : ?>
+	                            <?php foreach ($getthursday as $thursday): ?>
 	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 	                                <!-- Block1 -->
 	                                <div class="block1"
@@ -345,12 +345,12 @@
 	                                        <div class="block1-txt p-t-8">
 	                                            <h4 class="txt-center p-b-11">
 	                                                <a class="trans-04">
-	                                                    <?php esc($thursday["thursday_name"]) ?>
+	                                                    <?php esc($thursday["thursday_name"])?>
 	                                                </a>
 	                                            </h4>
 
 	                                            <p class="txt-center p-b-10 trans-04">
-	                                                <?php esc($thursday["thursday_characterization"]) ?>
+	                                                <?php esc($thursday["thursday_characterization"])?>
 	                                            </p>
 
 	                                            <span class="txt-center trans-04">
@@ -361,7 +361,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                            <?php endforeach; ?>
+	                            <?php endforeach;?>
 
 	                        </div>
 	                    </div>
@@ -373,7 +373,7 @@
 	                    <div class="wrap-slick2">
 	                        <div class="slick2">
 
-	                            <?php foreach ($getfriday as $friday) : ?>
+	                            <?php foreach ($getfriday as $friday): ?>
 	                            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 	                                <!-- Block1 -->
 	                                <div class="block1"
@@ -388,12 +388,12 @@
 	                                        <div class="block1-txt p-t-8">
 	                                            <h4 class="txt-center p-b-11">
 	                                                <a class="trans-04">
-	                                                    <?php esc($friday["friday_name"]) ?>
+	                                                    <?php esc($friday["friday_name"])?>
 	                                                </a>
 	                                            </h4>
 
 	                                            <p class="txt-center p-b-10 trans-04">
-	                                                <?php esc($friday["friday_characterization"]) ?>
+	                                                <?php esc($friday["friday_characterization"])?>
 	                                            </p>
 
 	                                            <span class="txt-center trans-04">
@@ -404,7 +404,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                            <?php endforeach; ?>
+	                            <?php endforeach;?>
 
 	                        </div>
 	                    </div>
@@ -427,45 +427,20 @@
 	    </div>
 
 	    <div class="flex-w p-l-40 p-r-40 respon1">
-	        <div class=" how-gallery1">
-	            <a class="dis-block bg-img1 size8 how-overlay1" href="images/gallery-01.jpg" data-lightbox="gallery"
-	                style="background-image: url('images/gallery-01.jpg');"></a>
+
+	        <?php foreach ($allImages as $images): ?>
+	        <!-- <div class="how-gallery1">
+	            <a class="dis-block bg-img1 size8 how-overlay1"
+	                href=""
+	                data-lightbox="gallery"
+	                style="background-image: url('');"></a>
+	        </div> -->
+
+	        <div class="col-xl-6">
+	            <?php echo "<img class='sec-gallery__img' alt='Kassai fogadó' src='data:image/jpeg;base64," . base64_encode($images['image']) . "'>"; ?>
 	        </div>
 
-	        <div class=" how-gallery1">
-	            <a class="dis-block bg-img1 size8 how-overlay1" href="images/gallery-02.jpg" data-lightbox="gallery"
-	                style="background-image: url('images/gallery-02.jpg');"></a>
-	        </div>
-
-	        <div class=" how-gallery1">
-	            <a class="dis-block bg-img1 size8 how-overlay1" href="images/gallery-03.jpg" data-lightbox="gallery"
-	                style="background-image: url('images/gallery-03.jpg');"></a>
-	        </div>
-
-	        <div class=" how-gallery1">
-	            <a class="dis-block bg-img1 size8 how-overlay1" href="images/gallery-04.jpg" data-lightbox="gallery"
-	                style="background-image: url('images/gallery-04.jpg');"></a>
-	        </div>
-
-	        <div class=" how-gallery1">
-	            <a class="dis-block bg-img1 size8 how-overlay1" href="images/gallery-05.jpg" data-lightbox="gallery"
-	                style="background-image: url('images/gallery-05.jpg');"></a>
-	        </div>
-
-	        <div class=" how-gallery1">
-	            <a class="dis-block bg-img1 size8 how-overlay1" href="images/gallery-06.jpg" data-lightbox="gallery"
-	                style="background-image: url('images/gallery-06.jpg');"></a>
-	        </div>
-
-	        <div class=" how-gallery1">
-	            <a class="dis-block bg-img1 size8 how-overlay1" href="images/gallery-07.jpg" data-lightbox="gallery"
-	                style="background-image: url('images/gallery-07.jpg');"></a>
-	        </div>
-
-	        <div class=" how-gallery1">
-	            <a class="dis-block bg-img1 size8 how-overlay1" href="images/gallery-08.jpg" data-lightbox="gallery"
-	                style="background-image: url('images/gallery-08.jpg');"></a>
-	        </div>
+	        <?php endforeach;?>
 	    </div>
 	</section>
 
@@ -547,131 +522,54 @@
 	    <div class="container">
 	        <div class="p-b-58">
 	            <h3 class="l2-txt1 txt-center p-b-2">
-	                Upcoming Events
+	                Közelgő események
 	            </h3>
 
 	            <p class="m3-txt1 txt-center">
-	                Discoved & Useful
+	                Szeretettel köszöntjük honlapunkon!
 	            </p>
 	        </div>
 
 	        <div class="row">
+	            <?php foreach ($getprogrammes as $programmes): ?>
 	            <div class="col-sm-6 col-md-4 p-b-30">
 	                <!-- item event -->
 	                <div class="item-event">
-	                    <a href="blog-detail.html" class="wrap-pic-w how-overlay2">
+	                    <!-- <a href="blog-detail.html" class="wrap-pic-w how-overlay2">
 	                        <img src="images/blog-01.jpg" alt="IMG-BLOG">
-	                    </a>
-
+	                    </a> -->
 	                    <div class="p-t-25">
 	                        <h4 class="p-b-17">
-	                            <a href="blog-detail.html" class="m2-txt1 hov-cl1 trans-04">
-	                                Christmas Week For Everyone!
+	                            <a class="m2-txt1 hov-cl1 trans-04">
+	                                <?php esc($programmes["programmes_name"])?>
 	                            </a>
 	                        </h4>
 
 	                        <div class="s1-txt2 flex-sb-m flex-w bor2 p-t-5 p-b-5">
 	                            <span class="m-r-15">
 	                                <i class="fa fa-calendar m-r-6"></i>
-	                                Dec 15, 2017
+	                                <?php esc($programmes["programmes_date"])?>
 	                            </span>
 
 	                            <span>
 	                                <i class="fa fa-clock-o m-r-6 fs-15"></i>
-	                                8:00 AM - 10:00 PM
+	                                <?php esc($programmes["programmes_time"])?>
 	                            </span>
 	                        </div>
 
 	                        <p class="s1-txt3 p-t-17 p-b-12">
-	                            Toil and pain can procure him some great pleasure. To take a trivial example, which of us
-	                            ever in under-takes laborious physical exercise ever in unde.
+	                            <?php esc($programmes["programmes_characterization"])?>
 	                        </p>
 
-	                        <a href="blog-detail.html" class="s1-txt4 hov-cl1 hov1 trans-04">
+	                        <a href="blog-detail.html" class="s1-txt4 hov-cl1 hov1 trans-04 d-none">
 	                            Learn More
 	                            <i class="fa fa-long-arrow-right"></i>
 	                        </a>
 	                    </div>
 	                </div>
+
 	            </div>
-
-	            <div class="col-sm-6 col-md-4 p-b-30">
-	                <!-- item event -->
-	                <div class="item-event">
-	                    <a href="blog-detail.html" class="wrap-pic-w how-overlay2">
-	                        <img src="images/blog-02.jpg" alt="IMG-BLOG">
-	                    </a>
-
-	                    <div class="p-t-25">
-	                        <h4 class="p-b-17">
-	                            <a href="blog-detail.html" class="m2-txt1 hov-cl1 trans-04">
-	                                Acoustic Guitar Festival In Yumi.
-	                            </a>
-	                        </h4>
-
-	                        <div class="s1-txt2 flex-sb-m flex-w bor2 p-t-5 p-b-5">
-	                            <span class="m-r-15">
-	                                <i class="fa fa-calendar m-r-6"></i>
-	                                Dec 16, 2017
-	                            </span>
-
-	                            <span>
-	                                <i class="fa fa-clock-o m-r-6 fs-15"></i>
-	                                7:00 PM - 10:00 PM
-	                            </span>
-	                        </div>
-
-	                        <p class="s1-txt3 p-t-17 p-b-12">
-	                            Toil and pain can procure him some great pleasure. To take a trivial example, which of us
-	                            ever in undertakes laborious exercise.
-	                        </p>
-
-	                        <a href="blog-detail.html" class="s1-txt4 hov-cl1 hov1 trans-04">
-	                            Learn More
-	                            <i class="fa fa-long-arrow-right"></i>
-	                        </a>
-	                    </div>
-	                </div>
-	            </div>
-
-	            <div class="col-sm-6 col-md-4 p-b-30">
-	                <!-- item event -->
-	                <div class="item-event">
-	                    <a href="blog-detail.html" class="wrap-pic-w how-overlay2">
-	                        <img src="images/blog-03.jpg" alt="IMG-BLOG">
-	                    </a>
-
-	                    <div class="p-t-25">
-	                        <h4 class="p-b-17">
-	                            <a href="blog-detail.html" class="m2-txt1 hov-cl1 trans-04">
-	                                Winter Wonder With Yumi.
-	                            </a>
-	                        </h4>
-
-	                        <div class="s1-txt2 flex-sb-m flex-w bor2 p-t-5 p-b-5">
-	                            <span class="m-r-15">
-	                                <i class="fa fa-calendar m-r-6"></i>
-	                                Dec 18, 2017
-	                            </span>
-
-	                            <span>
-	                                <i class="fa fa-clock-o m-r-6 fs-15"></i>
-	                                8:00 AM - 10:00 PM
-	                            </span>
-	                        </div>
-
-	                        <p class="s1-txt3 p-t-17 p-b-12">
-	                            Toil and pain can procure him some great pleasure. To take a trivial example, which of us
-	                            ever in undertakes laborious physical exercise physical.
-	                        </p>
-
-	                        <a href="blog-detail.html" class="s1-txt4 hov-cl1 hov1 trans-04">
-	                            Learn More
-	                            <i class="fa fa-long-arrow-right"></i>
-	                        </a>
-	                    </div>
-	                </div>
-	            </div>
+	            <?php endforeach;?>
 	        </div>
 	    </div>
 	</section>

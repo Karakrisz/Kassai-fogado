@@ -9,9 +9,9 @@ $config = [
 
 // $config = [
 //     "DB_HOST" => "localhost",
-//     "DB_USER" => "yousiteh_karaKrisz",
+//     "DB_USER" => "kassaifo_kassai",
 //     "DB_PASS" => "Hacker13prog",
-//     "DB_NAME" => "yousiteh_kassai_fogado"
+//     "DB_NAME" => "kassaifo_kassai"
 // ];
 
 $connection = mysqli_connect($config['DB_HOST'], $config['DB_USER'], $config['DB_PASS'], $config['DB_NAME']);

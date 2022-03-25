@@ -1,0 +1,24 @@
+[ERROR] Query error:Table 'traning.photo' doesn't exist
+[ERROR] Query error:Table 'traning.photo' doesn't exist
+[ERROR] Query error:Table 'traning.phtos' doesn't exist
+[ERROR] Query error:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OFFET  ?' at line 1
+[ERROR] Query error:
+[ERROR] Query error:
+[ERROR] Query error:
+[ERROR] Query error:
+[ERROR] Query error:Table 'traning.photo' doesn't exist
+[ERROR] Query error:Table 'traning.photo' doesn't exist
+[ERROR] Query error:Table 'traning.photo' doesn't exist
+[ERROR] 2021-12-29T18:13:05+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:80 Query error: Table 'kassai_fogado.monda' doesn't exist
+[ERROR] 2021-12-29T18:13:25+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:80 Query error: Table 'kassai_fogado.monda' doesn't exist
+[ERROR] 2021-12-29T18:13:25+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:80 Query error: Table 'kassai_fogado.monda' doesn't exist
+[ERROR] 2021-12-29T18:13:26+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:80 Query error: Table 'kassai_fogado.monda' doesn't exist
+[ERROR] 2021-12-29T18:13:26+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:80 Query error: Table 'kassai_fogado.monda' doesn't exist
+[ERROR] 2021-12-29T18:13:27+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:80 Query error: Table 'kassai_fogado.monda' doesn't exist
+[ERROR] 2021-12-29T18:13:27+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:80 Query error: Table 'kassai_fogado.monda' doesn't exist
+[ERROR] 2022-01-29T13:40:59+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:737 Query error: Table 'kassai_fogado.weddingmenu' doesn't exist
+[ERROR] 2022-01-29T13:41:08+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:737 Query error: Table 'kassai_fogado.weddingmenu' doesn't exist
+[ERROR] 2022-01-29T13:41:45+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:737 Query error: Table 'kassai_fogado.weddingmenu' doesn't exist
+[ERROR] 2022-01-29T13:41:46+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:737 Query error: Table 'kassai_fogado.weddingmenu' doesn't exist
+[ERROR] 2022-01-29T13:41:50+0000 /Applications/XAMPP/xamppfiles/htdocs/Kassai-fogado/core/functions.php:737 Query error: Table 'kassai_fogado.weddingmenu' doesn't exist
+[ERROR] 2022-03-02T22:52:10+0100 /home/kassaifo/public_html/core/functions.php:513 Query error: Table 'kassaifo_kassai.drinks' doesn't exist

@@ -9,6 +9,8 @@ function homeController()
     $getwednesday = wednesday($connection);
     $getthursday = thursday($connection);
     $getfriday = friday($connection);
+    $allImages = retrieveAllimages($connection);
+    $getprogrammes = programmes($connection);
 
     return [
         "home",
@@ -18,7 +20,9 @@ function homeController()
             "gettuesday" => $gettuesday,
             "getwednesday" => $getwednesday,
             "getthursday" => $getthursday,
-            "getfriday" => $getfriday
+            "getfriday" => $getfriday,
+            "allImages" => $allImages,
+            "getprogrammes" => $getprogrammes
         ]
     ];
     
@@ -35,6 +39,7 @@ function menuController()
     $getdesserts = desserts($connection);
     $getgarnishes = garnishes($connection);
     $gethomemadePickles = homemadePickles($connection);
+    $getdrinks = drinks($connection);
 
     return [
         "etlap",
@@ -45,7 +50,8 @@ function menuController()
             "getmainCourses" => $getmainCourses,
             "getdesserts" => $getdesserts,
             "getgarnishes" => $getgarnishes,
-            "gethomemadePickles" => $gethomemadePickles
+            "gethomemadePickles" => $gethomemadePickles,
+            "getdrinks" => $getdrinks
         ]
     ];
     
@@ -70,6 +76,18 @@ function kassaiVolgyController()
         "kassai-volgy",
         [
             "title" => "Rólunk"
+        ]
+    ];
+    
+}
+
+function rendezvenyekController()
+{
+
+    return [
+        "rendezvenyek",
+        [
+            "title" => "Rendezvények"
         ]
     ];
     
@@ -124,6 +142,7 @@ function galleryRecordingController()
     
 }
 
+
 function imageSubmitController()
 {
     $filename = $_FILES["image"]["name"];
@@ -138,6 +157,29 @@ function imageSubmitController()
     return [
         "redirect:/gallery-recording", [],
     ];
+}
+
+function panzioGalleryRecordingController()
+{
+
+    $connection = getConnection();
+
+    $imgFixed = array_key_exists("imgFixed", $_SESSION);
+    unset($_SESSION["imgFixed"]);
+
+    $dataDelete = array_key_exists("dataDelete", $_SESSION);
+    unset($_SESSION["dataDelete"]);
+
+
+    return [
+        "panzio-gallery-recording",
+        [
+            "title" => "Panzió Képek rögzítése",
+            "imgFixed"=> $imgFixed,
+            "dataDelete" => $dataDelete
+        ]
+    ];
+    
 }
 
 
@@ -350,6 +392,7 @@ function menuRecordingController()
     $getdesserts = desserts($connection);
     $getgarnishes = garnishes($connection);
     $gethomemadePickles = homemadePickles($connection);
+    $getdrinks = drinks($connection);
 
     $foodFixed = array_key_exists("foodFixed", $_SESSION);
     unset($_SESSION["foodFixed"]);
@@ -368,6 +411,7 @@ function menuRecordingController()
             "getdesserts" => $getdesserts,
             "getgarnishes" => $getgarnishes,
             "gethomemadePickles" => $gethomemadePickles,
+            "getdrinks" => $getdrinks,
             "foodFixed" => $foodFixed,
             "dataDelete" => $dataDelete
         ]
@@ -569,6 +613,39 @@ function homemadePicklesDeleteController($params)
     
 }
 
+function drinksSubmitController()
+{
+    $connection = getConnection();
+    
+    $drinks_name = $_POST['drinks_name'];
+    $drinks_characterization = $_POST['drinks_characterization'];
+    $drinks_price = $_POST['drinks_price'];
+    drinksAppend($connection, $drinks_name, $drinks_characterization, $drinks_price);
+            
+    $_SESSION["foodFixed"] = 1;
+    
+    return [
+        "redirect:/menu-recording", []
+    ];
+    
+}
+
+function drinksDeleteController($params)
+{
+    $connection = getConnection();
+    
+    drinksDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
+    
+    return [
+        "redirect:/menu-recording",
+        []
+    ];
+    
+}
+
+
 function eventsRecordingController()
 {
     $connection = getConnection();
@@ -581,6 +658,7 @@ function eventsRecordingController()
     $getvegetarianMenu = vegetarianMenu($connection);
     $getclassicMenu = classicMenu($connection);
     $getweddingMenu = weddingMenu($connection);
+
 
     $foodFixed = array_key_exists("foodFixed", $_SESSION);
     unset($_SESSION["foodFixed"]);
@@ -601,7 +679,7 @@ function eventsRecordingController()
             "getvegetarianMenu" => $getvegetarianMenu,
             "getclassicMenu" => $getclassicMenu,
             "getweddingMenu" => $getweddingMenu,
-            "dataDelete" => $dataDelete 
+            "dataDelete" => $dataDelete
         ]
     ];
     
@@ -850,6 +928,65 @@ function weddingMenuDeleteController($params)
     
     return [
         "redirect:/events",
+        []
+    ];
+    
+}
+
+
+function programmesRecordingController()
+{
+    $connection = getConnection();
+
+    $getprogrammes = programmes($connection);
+
+    $foodFixed = array_key_exists("foodFixed", $_SESSION);
+    unset($_SESSION["foodFixed"]);
+
+    $dataDelete = array_key_exists("dataDelete", $_SESSION);
+    unset($_SESSION["dataDelete"]);
+    
+    return [
+        "programmes",
+        [
+            "title" => "Közelgő események",
+            "getprogrammes" => $getprogrammes,
+            "foodFixed" => $foodFixed,
+            "dataDelete" => $dataDelete
+        ]
+    ];
+    
+}
+
+
+function programmeSubmitController()
+{
+    $connection = getConnection();
+    
+    $programmes_name = $_POST['programmes_name'];
+    $programmes_date = $_POST['programmes_date'];
+    $programmes_time = $_POST['programmes_time'];
+    $programmes_characterization = $_POST['programmes_characterization'];
+    programmesAppend($connection, $programmes_name, $programmes_date, $programmes_time, $programmes_characterization);
+            
+    $_SESSION["foodFixed"] = 1;
+    
+    return [
+        "redirect:/programmes", []
+    ];
+    
+}
+
+function programmesDeleteController($params)
+{
+    $connection = getConnection();
+    
+    programmesDelete($connection, $params["id"]);
+
+    $_SESSION["dataDelete"] = 1;
+    
+    return [
+        "redirect:/programmes",
         []
     ];
     

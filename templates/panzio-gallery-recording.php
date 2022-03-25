@@ -1,11 +1,11 @@
 <section class="food_options text-center mt-200">
     <div class="container">
-        <h2 class="mb-100">Képek rögzítése</h2>
-        <?php if ($imgFixed): ?>
+        <h2 class="mb-100">Panzió képek rögzítése</h2>
+        <?php if($imgFixed): ?>
         <div class="alert alert-success food_options__alert">
             <p class="food_options__alert__p">A képet rögzítettük!</p>
         </div>
-        <?php endif?>
+        <?php endif ?>
 
         <div class="food_options__img-append-box">
             <form class="food_options__img-append-box__form" id="addImageSubmit" action="/addImageSubmit" method="post"

@@ -3,7 +3,12 @@
         <h2 class="mb-100">Ételek rögzítése</h2>
         <?php if($foodFixed): ?>
         <div class="alert alert-success food_options__alert">
-            <p class="food_options__alert__p">Az ételt rögzítettük!</p>
+            <p class="food_options__alert__p">A terméket rögzítettük!</p>
+        </div>
+        <?php endif ?>
+        <?php if($dataDelete): ?>
+        <div class="alert alert-danger food_options__alert">
+            <p class="food_options__alert__p">Az terméket töröltük!</p>
         </div>
         <?php endif ?>
         <ul class="food_options-ul nav nav-tabs d-flex justify-content-center">
@@ -27,6 +32,9 @@
             </li>
             <li>
                 <a href="#menu_tab7" data-toggle="tab">Házi savanyúságok</a>
+            </li>
+            <li>
+                <a href="#menu_tab8" data-toggle="tab">Italok</a>
             </li>
         </ul>
         <div class="mt-100 tab-content">
@@ -407,6 +415,70 @@
                                                 <li>
                                                     <h3 class="text-left">
                                                         <?php esc($homemadePickles["homemadePickles_name"]) ?></h3>
+                                                    <button type="submit"
+                                                        class="btn btn-danger float-right">Törlés</button>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="menu_tab8">
+                <form id="drinksSubmit" method="POST" action="/drinksSubmit">
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-xl-6 form-group">
+                            <label for="drinks">Ital</label>
+                            <input type="text" id="drinks_name" name="drinks_name" required>
+                        </div>
+                        <div class="col-xl-6 form-group">
+                            <label for="drinks-characterization">Ital jellemzése</label>
+                            <input type="text" id="drinks_characterization" name="drinks_characterization" required>
+                        </div>
+                        <div class="col-xl-6 form-group">
+                            <label for="monday-price">Ital ára</label>
+                            <input type="text" id="drinks_price" name="drinks_price">
+                        </div>
+                    </div>
+                    <div class="alert alert-success inserted-alert-success">
+                        <p id="drinks-inserted">
+                        </p>
+                    </div>
+                    <button type="submit"
+                        class="flex-c-m s1-txt1 size6 bg1 how-btn1 trans-04 m-lr-auto karaKrisz--link-formating">Rögzítés</button>
+                </form>
+                <br>
+                <button type="button" class="btn btn-primary mt-30" data-toggle="modal" data-target="#drinksModal">
+                    Italok megtekintése
+                </button>
+
+                <!-- The Modal -->
+                <div class="fade modal" id="drinksModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Italok</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <?php foreach ($getdrinks as $drinks) : ?>
+                                        <form method="POST"
+                                            action="/menu-recording/<?php esc($drinks['id'])  ?>/drinksdelete">
+                                            <ul>
+                                                <li>
+                                                    <h3 class="text-left">
+                                                        <?php esc($drinks["drinks_name"]) ?></h3>
                                                     <button type="submit"
                                                         class="btn btn-danger float-right">Törlés</button>
                                                 </li>

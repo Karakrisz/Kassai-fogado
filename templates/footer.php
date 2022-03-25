@@ -32,8 +32,8 @@
 	                        <li class="s1-txt3 flex-w p-b-17">
 	                            <i class="fa fa-clock-o fs-20 wsize1"></i>
 	                            <span class="wsize2">
-	                                Hét-Szom: 10:00-21:00 <br>
-	                                Vas: 10:00-17:00
+	                                Hétfő - Szombat: 10:00-21:00 <br>
+	                                Vasárnap: 10:00-17:00
 	                            </span>
 	                        </li>
 
@@ -45,6 +45,12 @@
 	                            </span>
 	                        </li>
 
+	                        <li class="s1-txt3 flex-w p-b-17">
+	                            <i class="fa fa-phone fs-20 wsize1"></i>
+	                            <span class="wsize2">
+	                                Telefonszám: <a class="footer__contact-link" href="tel:+0682686400">06 82 686 400</a>
+	                            </span>
+	                        </li>
 	                        <li class="s1-txt3 flex-w p-b-17">
 	                            <i class="fa fa-phone fs-20 wsize1"></i>
 	                            <span class="wsize2">
@@ -147,6 +153,20 @@
 	        Minden jog
 	        fenntartva.
 	    </div>
+
+	    <div class="footer-grid-bottom">
+	        <article id="media_image-3" class="widget widget_media_image">
+	            <a href="/"><img width="300" height="209"
+	                    src="https://borkeksz.hu/wp-content/uploads/2019/03/szechenyi2020-esba-300x209.png"
+	                    class="image wp-image-331  attachment-medium size-medium" alt="Széchenyi 2020 ESBA" loading="lazy"
+	                    style="max-width: 100%; height: auto;"
+	                    srcset="https://borkeksz.hu/wp-content/uploads/2019/03/szechenyi2020-esba-300x209.png 300w, https://borkeksz.hu/wp-content/uploads/2019/03/szechenyi2020-esba.png 527w"
+	                    sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 300px" />
+	            </a>
+	        </article>
+	    </div>
+
+
 	</footer>
 
 

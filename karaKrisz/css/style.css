@@ -1,5 +1,23 @@
 /********************  karaKrisz formating start **********************/
 
+section.sec-our-food.bg2.p-t-65.p-b-65 {
+    display: none;
+}
+
+.sec-partner.bg-img1.p-t-30.p-b-30 {
+    display: none;
+}
+
+
+/********************  vélemények **********************/
+
+section.sec-testimonials.bg0.p-t-90.p-b-90 {
+    display: none;
+}
+
+
+/********************  ezt majd vissza kell tenni **********************/
+
 .d-flex {
     display: flex;
 }
@@ -31,6 +49,17 @@
     bottom: 55px;
 }
 
+span.txt-center.trans-04 {
+    display: none;
+}
+
+section.sec-team.bg2.p-t-90.p-b-55 {
+    display: none;
+}
+
+
+/********************  ezt majd vissza kell tenni itt dolgozok **********************/
+
 
 /********************  Header content start **********************/
 
@@ -38,6 +67,15 @@
 .sub-menu-m,
 .arrow-main-menu-m {
     display: none !important;
+}
+
+.header-v1 .main-menu>li {
+    margin: 20px 20px 20px 40px !important;
+}
+
+.tab01 .nav-link.active {
+    color: #ffa414 !important;
+    font-size: 18px !important;
 }
 
 
@@ -56,6 +94,16 @@
 /********************  Menu content end **********************/
 
 
+/********************  slider1 content start **********************/
+
+.block1-txt a {
+    font-size: 15px !important;
+}
+
+
+/********************  slider1 content end **********************/
+
+
 /********************  Book a table content start **********************/
 
 .sec-booking__div {
@@ -64,6 +112,29 @@
 
 
 /********************  Book a table content end **********************/
+
+
+/********************  Sec gallery content start **********************/
+
+.sec-gallery__img {
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+
+/********************  Sec gallery  content end **********************/
+
+
+/********************  Sec event gallery  content start **********************/
+
+.m2-txt1 {
+    color: #333 !important;
+}
+
+
+/********************  Sec event content end **********************/
 
 
 /********************  Footer content start **********************/
@@ -127,7 +198,7 @@
 .food_options label {
     font-family: "Josefin Sans", sans-serif;
     color: #F4EDED;
-    font-size: 22px;
+    font-size: 20px;
     margin: 0 0 20px 0;
 }
 
@@ -254,6 +325,43 @@
 
 /********************  Title page (contact) content start **********************/
 
+section.sec-booking.bg-img1.p-b-120.p-l-15.p-r-15 {
+    padding: 0;
+}
+
+
+/********************  sec about content start **********************/
+
+.sec-about__link {
+    color: #ffa414;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+/********************  footer content start **********************/
+
+.footer-grid-bottom img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+/********************  events content start **********************/
+
+.events__p--formating {
+    color: #ffa414;
+    font-size: 18px;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.events__h3--formating {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
 
 /********************  Media start **********************/
 
@@ -300,6 +408,9 @@
     }
     .flex-c-m.s1-txt1.size6.bg1.how-btn1.trans-04.m-lr-auto.karaKrisz--link-formating {
         margin-bottom: 50px;
+    }
+    .footer-grid-bottom img {
+        width: 50%;
     }
 }
 

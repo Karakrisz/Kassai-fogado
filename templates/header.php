@@ -24,7 +24,7 @@
 	                        </li>
 
 	                        <li>
-	                            <a target="_blank" href="/etlap">Ételek, italok</a>
+	                            <a href="/etlap">Ételek, italok</a>
 	                            <ul class="sub-menu">
 	                                <li><a href="menu-01.html">Menu 1</a></li>
 	                                <li><a href="menu-02.html">Menu 2</a></li>
@@ -35,14 +35,19 @@
 	                        </li>
 
 	                        <li>
-	                            <a target="_blank" href="/kassai-volgy">Kassai Völgy</a>
+	                            <a href="/kassai-volgy">Programok</a>
 	                            <ul class="sub-menu">
 	                                <li><a href="gallery.html">Gallery</a></li>
 	                            </ul>
 	                        </li>
 
+
 	                        <li>
-	                            <a target="_blank" href="/panzio">Panzió</a>
+	                            <a href="/rendezvenyek">Rendezvények</a>
+	                        </li>
+
+	                        <li>
+	                            <a href="/panzio">Panzió</a>
 	                            <ul class="sub-menu">
 	                                <li><a href="reservation-01.html">Reservation 1</a></li>
 	                                <li><a href="reservation-02.html">Reservation 2</a></li>
@@ -51,10 +56,10 @@
 	                        </li>
 
 	                        <li>
-	                            <a target="_blank" href="/rolunk">Rólunk</a>
+	                            <a href="/rolunk">Rólunk</a>
 	                        </li>
 
-	                        <li>
+	                        <!-- <li>
 	                            <a href="#">Rendezvények</a>
 	                            <ul class="sub-menu">
 	                                <li><a href="blog-grid-01.html">Blog Grid 1</a></li>
@@ -62,10 +67,10 @@
 	                                <li><a href="blog-list.html">Blog List</a></li>
 	                                <li><a href="blog-detail.html">Blog Detail</a></li>
 	                            </ul>
-	                        </li>
+	                        </li> -->
 
 	                        <li>
-	                            <a target="_blank" href="/kapcsolat">Kapcsolat</a>
+	                            <a href="/kapcsolat">Kapcsolat</a>
 	                        </li>
 	                    </ul>
 	                </div>
@@ -122,7 +127,7 @@
 	            </li>
 
 	            <li>
-	                <a target="_blank" href="/etlap">Ételek, italok</a>
+	                <a href="/etlap">Ételek, italok</a>
 	                <ul class="sub-menu-m">
 	                    <li><a href="menu-01.html">Menu 1</a></li>
 	                    <li><a href="menu-02.html">Menu 2</a></li>
@@ -136,7 +141,7 @@
 	            </li>
 
 	            <li>
-	                <a target="_blank" href="kassai-volgy">Kassai Völgy</a>
+	                <a href="kassai-volgy">Programok</a>
 	                <ul class="sub-menu-m">
 	                    <li><a href="gallery.html">Gallery</a></li>
 	                </ul>
@@ -146,7 +151,11 @@
 	            </li>
 
 	            <li>
-	                <a target="_blank" href="/panzio">Panzió</a>
+	                <a href="rendezvenyek">Rendezvények</a>
+	            </li>
+
+	            <li>
+	                <a href="/panzio">Panzió</a>
 	                <ul class="sub-menu-m">
 	                    <li><a href="reservation-01.html">Reservation 1</a></li>
 	                    <li><a href="reservation-02.html">Reservation 2</a></li>
@@ -158,10 +167,10 @@
 	            </li>
 
 	            <li>
-	                <a target="_blank" href="/rolunk">Rólunk</a>
+	                <a href="/rolunk">Rólunk</a>
 	            </li>
 
-	            <li>
+	            <!-- <li>
 	                <a href="#">Rendezvények</a>
 	                <ul class="sub-menu-m">
 	                    <li><a href="blog-grid-01.html">Blog Grid 1</a></li>
@@ -172,10 +181,10 @@
 	                <span class="arrow-main-menu-m">
 	                    <i class="fa fa-angle-right" aria-hidden="true"></i>
 	                </span>
-	            </li>
+	            </li> -->
 
 	            <li>
-	                <a target="_blank" href="/kapcsolat">Kapcsolat</a>
+	                <a href="/kapcsolat">Kapcsolat</a>
 	            </li>
 	        </ul>
 	    </div>

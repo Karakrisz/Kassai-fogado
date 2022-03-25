@@ -69,12 +69,17 @@
                         1 apartman (6fő): 30.000 Ft/éjszaka
                     </p>
 
+                    <p class="s1-txt8 p-b-25">
+                        Kisállat szállás díja: 3500 Ft / éjszaka
+                    </p>
+
+
                     <h4 class="m1-txt9 p-b-15">
                         Gyermek kedvezmények
                     </h4>
 
                     <p class="s1-txt8 p-b-25">
-                        3 éves korig grátisz
+                        3 éves korig ingyenes
                     </p>
 
                     <p class="s1-txt8 p-b-25">
@@ -96,10 +101,22 @@
                     </h4>
 
                     <p class="s1-txt8 p-b-25">
-                        <strong>Reggeli étkezéssel kapcsolatos szándékát, kérjük a szoba elfoglalását megelőzően
-                            jelezze, mivel Fogadónkban nincs állandó reggeliztetés így csak az előre leegyeztetett
-                            reggeli étlek és italok kiszolgálására van lehetőség.</strong>
+                        Lehetőség van hideg és meleg reggeli fogyasztására.
                     </p>
+                    <p class="s1-txt8 p-b-25">
+                        Félpanziós ellátás ára: 5490 Ft / fő, mely tartalmazza a reggelit és egy két fogásos vacsorát.
+                    </p>
+
+                    <p class="s1-txt8 p-b-25">
+                        Félpanziós ellátás ára: 5490 Ft / fő, mely tartalmazza a reggelit és egy két fogásos vacsorát.
+                    </p>
+
+                    <p class="s1-txt8 p-b-25">
+                        <strong>Reggeli étkezéssel kapcsolatos szándékát, kérjük a szoba elfoglalását megelőzően
+                            jelezze, mivel Fogadónkban nincs állandó reggeliztetés így csak az előre egyeztetett
+                            reggeli ételek és italok kiszolgálására van lehetőség.</strong>
+                    </p>
+
 
                     <h4 class="m1-txt9 p-b-15">
                         Reggeli időpontja
@@ -119,5 +136,35 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Gallery -->
+<section class="sec-gallery bg2 p-t-90 p-b-110">
+    <div class="p-l-15 p-r-15 p-b-48">
+        <h3 class="l2-txt1 txt-center p-b-2">
+            Képtár
+        </h3>
+
+        <p class="m3-txt1 txt-center">
+            Szeretettel köszöntjük honlapunkon!
+        </p>
+    </div>
+
+    <div class="flex-w p-l-40 p-r-40 respon1">
+
+        <?php foreach ($allImages as $images): ?>
+        <!-- <div class="how-gallery1">
+	            <a class="dis-block bg-img1 size8 how-overlay1"
+	                href=""
+	                data-lightbox="gallery"
+	                style="background-image: url('');"></a>
+	        </div> -->
+
+        <div class="col-xl-6">
+            <?php echo "<img class='sec-gallery__img' alt='Kassai fogadó' src='data:image/jpeg;base64," . base64_encode($images['image']) . "'>"; ?>
+        </div>
+
+        <?php endforeach;?>
     </div>
 </section>

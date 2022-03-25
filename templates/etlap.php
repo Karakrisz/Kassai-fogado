@@ -234,6 +234,40 @@
 
 	                    </div>
 	                </div>
+
+	                <div class="col-md-6 p-b-30">
+	                    <div>
+	                        <div class="flex-c-m bg-img1 bg-overlay6 l1-txt2 hsize2 p-l-15 p-r-15 p-t-30 p-b-30"
+	                            style="background-image: url('images/bg-menu-05.jpg');">
+	                            Italok
+	                        </div>
+
+	                        <ul class="sec-menu__ul">
+	                            <!-- item menu -->
+	                            <?php foreach ($getdrinks as $drinks) : ?>
+	                            <li class="flex-m bor7 p-l-20 p-r-20 p-t-25 p-b-25 sec-menu__ul__li">
+	                                <div class="wsize11" class="sec-menu__ul__li__div">
+	                                    <a class="m2-txt5 hov-cl1 trans-04 sec-menu__ul__li__div__link">
+	                                        <?php esc($drinks['drinks_name'])?>
+	                                    </a>
+
+	                                    <p class="s1-txt3 p-t-9" class="sec-menu__ul__li__div__link__p">
+	                                        <?php esc($drinks['drinks_characterization'])?>
+	                                    </p>
+	                                </div>
+
+	                                <div class="l2-txt6 p-l-20 sec-menu__ul__li__div">
+	                                    <span class="sec-menu__ul__li__div__span">
+	                                        <?php esc($drinks['drinks_price'])?> <strong
+	                                            class="sec-menu__ul__li__div__span__strong">Ft</strong>
+	                                    </span>
+	                                </div>
+	                            </li>
+	                            <?php endforeach; ?>
+	                        </ul>
+
+	                    </div>
+	                </div>
 	            </div>
 	        </div>
 	    </div>
