@@ -41,6 +41,14 @@
 	                            <i class="fa fa-envelope-o fs-20 wsize1"></i>
 	                            <span class="wsize2">
 	                                <a class="footer__contact-link"
+	                                    href="mailto:info.kassaifogadoszallas@gmail.com">info.kassaifogadoszallas@gmail.com</a>
+	                            </span>
+	                        </li>
+
+	                        <li class="s1-txt3 flex-w p-b-17 footer__contact-link--hide">
+	                            <i class="fa fa-envelope-o fs-20 wsize1"></i>
+	                            <span class="wsize2">
+	                                <a class="footer__contact-link"
 	                                    href="mailto:kassai.fogado@gmail.com">kassai.fogado@gmail.com</a>
 	                            </span>
 	                        </li>
@@ -154,9 +162,14 @@
 	        fenntartva.
 	    </div>
 
+
+	    <div class="close-icons">
+	        <i class="fa fa-close"></i>
+	    </div>
+
 	    <div class="footer-grid-bottom">
 	        <article id="media_image-3" class="widget widget_media_image">
-	            <a href="/"><img width="300" height="209"
+	            <a target="_blank" href="/szechenyi-2020"><img width="300" height="209"
 	                    src="https://borkeksz.hu/wp-content/uploads/2019/03/szechenyi2020-esba-300x209.png"
 	                    class="image wp-image-331  attachment-medium size-medium" alt="Széchenyi 2020 ESBA" loading="lazy"
 	                    style="max-width: 100%; height: auto;"
@@ -225,3 +238,4 @@ $('.parallax100').parallax100();
 	<script src="vendor/lightbox2/js/lightbox.min.js"></script>
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script src="karaKrisz/js/app.js"></script>

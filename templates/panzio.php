@@ -2,7 +2,7 @@
 <section class="bg-img1 txt-center bg-overlay3 p-l-15 p-r-15 p-t-92 p-b-102 title-section"
     style="background-image: url('karaKrisz/img/section-bg.jpg');">
     <h2 class="l2-txt5 txt-center p-b-15">
-        Rólunk
+        Panzió
     </h2>
 
     <div class="flex-w flex-c-m">
@@ -42,11 +42,11 @@
                     </h4>
 
                     <p class="s1-txt8 p-b-25">
-                        1 fő (1 szoba): 14.500 Ft/éjszaka
+                        1 fő (1 szoba): 20.000 Ft/éjszaka
                     </p>
 
                     <p class="s1-txt8 p-b-25">
-                        2 fő (1 szoba): 16.000 Ft/éjszaka
+                        2 fő (1 szoba): 20.000 Ft/éjszaka
                     </p>
 
                     <p class="s1-txt8 p-b-25">
@@ -107,14 +107,15 @@
                         Félpanziós ellátás ára: 5490 Ft / fő, mely tartalmazza a reggelit és egy két fogásos vacsorát.
                     </p>
 
-                    <p class="s1-txt8 p-b-25">
-                        Félpanziós ellátás ára: 5490 Ft / fő, mely tartalmazza a reggelit és egy két fogásos vacsorát.
-                    </p>
 
                     <p class="s1-txt8 p-b-25">
                         <strong>Reggeli étkezéssel kapcsolatos szándékát, kérjük a szoba elfoglalását megelőzően
                             jelezze, mivel Fogadónkban nincs állandó reggeliztetés így csak az előre egyeztetett
                             reggeli ételek és italok kiszolgálására van lehetőség.</strong>
+                    </p>
+
+                    <p class="s1-txt8 p-b-25">
+                        <strong>Reggeli ára: 2290 Ft / Fő</strong>
                     </p>
 
 
@@ -153,7 +154,7 @@
 
     <div class="flex-w p-l-40 p-r-40 respon1">
 
-        <?php foreach ($allImages as $images): ?>
+        <?php foreach ($PanzioAllImages as $images): ?>
         <!-- <div class="how-gallery1">
 	            <a class="dis-block bg-img1 size8 how-overlay1"
 	                href=""

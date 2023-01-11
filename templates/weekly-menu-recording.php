@@ -1,11 +1,11 @@
 <section class="food_options text-center">
     <div class="container">
         <h2 class="mb-100">Menü rögzítése</h2>
-        <?php if($foodFixed): ?>
+        <?php if ($foodFixed): ?>
         <div class="alert alert-success food_options__alert">
             <p class="food_options__alert__p">Az ételt rögzítettük!</p>
         </div>
-        <?php endif ?>
+        <?php endif?>
         <ul class="food_options-ul nav nav-tabs d-flex justify-content-center">
             <!-- <li class="active">
                 <a href="#tab1" data-toggle="tab">Napi ajánlat</a>
@@ -67,18 +67,24 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getmonday as $monday) : ?>
+                                        <?php foreach ($getmonday as $monday): ?>
                                         <form method="POST"
-                                            action="/weekly-menu-recording/<?php esc($monday['id'])  ?>/mondaydelete">
+                                            action="/weekly-menu-recording/<?php esc($monday['id'])?>/mondaydelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($monday["monday_name"]) ?></h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left"><?php esc($monday["monday_name"])?></h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/monday<?php esc($monday["id"]) ?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
 
                                     </div>
                                 </div>
@@ -126,18 +132,25 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($gettuesday as $tuesday) : ?>
+                                        <?php foreach ($gettuesday as $tuesday): ?>
                                         <form method="POST"
-                                            action="/weekly-menu-recording/<?php esc($tuesday['id'])  ?>/tuesdaydelete">
+                                            action="/weekly-menu-recording/<?php esc($tuesday['id'])?>/tuesdaydelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($tuesday["tuesday_name"]) ?></h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+
+                                                        <h3 class="text-left"><?php esc($tuesday["tuesday_name"])?></h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/tuesday<?php esc($tuesday["id"]) ?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -185,19 +198,25 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getwednesday as $wednesday) : ?>
+                                        <?php foreach ($getwednesday as $wednesday): ?>
                                         <form method="POST"
-                                            action="/weekly-menu-recording/<?php esc($wednesday['id'])  ?>/wednesdaydelete">
+                                            action="/weekly-menu-recording/<?php esc($wednesday['id'])?>/wednesdaydelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($wednesday["wednesday_name"]) ?>
-                                                    </h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left"><?php esc($wednesday["wednesday_name"])?>
+                                                        </h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/wednesday<?php esc($wednesday["id"]) ?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -245,18 +264,25 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getthursday as $thursday) : ?>
+                                        <?php foreach ($getthursday as $thursday): ?>
                                         <form method="POST"
-                                            action="/weekly-menu-recording/<?php esc($thursday['id'])  ?>/thursdaydelete">
+                                            action="/weekly-menu-recording/<?php esc($thursday['id'])?>/thursdaydelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($thursday["thursday_name"]) ?></h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left"><?php esc($thursday["thursday_name"])?>
+                                                        </h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/thursday<?php esc($thursday["id"]) ?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -304,18 +330,24 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getfriday as $friday) : ?>
+                                        <?php foreach ($getfriday as $friday): ?>
                                         <form method="POST"
-                                            action="/weekly-menu-recording/<?php esc($friday['id'])  ?>/fridaydelete">
+                                            action="/weekly-menu-recording/<?php esc($friday['id'])?>/fridaydelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($friday["friday_name"]) ?></h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left"><?php esc($friday["friday_name"])?></h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/friday<?php esc($friday["id"]) ?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>

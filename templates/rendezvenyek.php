@@ -206,7 +206,7 @@
                 </p>
 
                 <h3 class="l2-txt2 p-b-2 events__h3--formating">
-                    Menü ára: 5990Ft/fő /saláta nélkül
+                    Menü ára: 6990Ft/fő /saláta nélkül
                 </h3>
 
                 <p class="s1-txt8 p-b-25">
@@ -277,75 +277,7 @@
                 </p>
 
                 <h3 class="l2-txt2 p-b-2 events__h3--formating">
-                    Menü ára: 5490Ft/fő
-                </h3>
-
-                <h3 class="l2-txt2 p-b-2 events__h3--formating">
-                    Minimum 15 fő esetén áll módunkban elkészíteni a menüt
-                </h3>
-
-            </div>
-
-            <div class="col-xl-12">
-
-                <h4 class="m1-txt9 p-b-15">
-                    Mérő Menü
-                </h4>
-
-                <p class="s1-txt8 p-b-25 events__p--formating">
-                    Leves:
-                </p>
-
-                <p class="s1-txt8 p-b-25">
-                    Falusi tyúkhúsleves gazdagon (zöldséggel,cérnametélttel)
-                </p>
-
-                <p class="s1-txt8 p-b-25 events__p--formating">
-                    Főétel (sültes tál):
-                </p>
-
-                <p class="s1-txt8 p-b-25">
-                    Roston sült csirkemell
-                </p>
-
-                <p class="s1-txt8 p-b-25">
-                    Cigánypecsenye
-                </p>
-
-                <p class="s1-txt8 p-b-25">
-                    Pirított szalonnával, gombával, róna sajttal töltött sertésszelet bécsi bundában
-                </p>
-
-                <p class="s1-txt8 p-b-25">
-                    Rozmaringos ropogósra sült kacsa-combok
-
-                </p>
-
-                <p class="s1-txt8 p-b-25 events__p--formating">
-                    Köretek:
-                </p>
-
-                <p class="s1-txt8 p-b-25">
-                    Párolt rizs
-                </p>
-                <p class="s1-txt8 p-b-25">
-                    Steak burgonya
-                </p>
-
-                <p class="s1-txt8 p-b-25">
-                    Párolt zöldség
-                </p>
-
-                <p class="s1-txt8 p-b-25 events__p--formating">
-                    Desszert:
-                </p>
-
-                <p class="s1-txt8 p-b-25">
-                    Somlói galuska csokoládémártással
-                </p>
-
-                <h3 class="l2-txt2 p-b-2 events__h3--formating">
-                    Menü ára: 5290Ft/fő
+                    Menü ára: 6290Ft/fő
                 </h3>
 
                 <h3 class="l2-txt2 p-b-2 events__h3--formating">
@@ -414,7 +346,7 @@
                 </p>
 
                 <h3 class="l2-txt2 p-b-2 events__h3--formating">
-                    Menü ára: 5290Ft/fő
+                    Menü ára: 6290Ft/fő
                 </h3>
 
                 <h3 class="l2-txt2 p-b-2 events__h3--formating">
@@ -487,7 +419,7 @@
                 </p>
 
                 <h3 class="l2-txt2 p-b-2 events__h3--formating">
-                    Menü ára: 5990Ft/fő
+                    Menü ára: 7490Ft/fő
                 </h3>
 
             </div>
@@ -551,7 +483,7 @@
                 </p>
 
                 <h3 class="l2-txt2 p-b-2 events__h3--formating">
-                    Menü ára: 5890Ft/fő
+                    Menü ára: 6490Ft/fő
                 </h3>
 
                 <h3 class="l2-txt2 p-b-2 events__h3--formating">
@@ -651,6 +583,10 @@
                     Finlandia Vodka 1 (Ajánlott mennyiség 2)
                 </p>
 
+                <h3 class="l2-txt2 p-b-2 events__h3--formating">
+                    Menü ára: 6990Ft/fő
+                </h3>
+
             </div>
 
             <div class="col-xl-12">
@@ -679,17 +615,6 @@
                     Következő Bankszámlaszámra utalhatja: 11743002-29915398.
                 </p>
 
-                <p class="s1-txt8 p-b-25">
-                    A folyósítás több módon is teljesíthető.
-                </p>
-
-                <p class="s1-txt8 p-b-25">
-                    Személyesen (Kassai Fogadó 7521, Kaposmérő Rákóczi u. 9-es szám alatt vagy
-                </p>
-
-                <p class="s1-txt8 p-b-25">
-                    Következő Bankszámlaszámra utalhatja: 11743002-29915398.
-                </p>
 
                 <p class="s1-txt8 p-b-25">
                     Közleménybe legyen szíves beírni rendezvény előleg.

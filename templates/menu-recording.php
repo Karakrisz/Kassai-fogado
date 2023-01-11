@@ -1,16 +1,16 @@
 <section class="food_options text-center">
     <div class="container">
         <h2 class="mb-100">Ételek rögzítése</h2>
-        <?php if($foodFixed): ?>
+        <?php if ($foodFixed): ?>
         <div class="alert alert-success food_options__alert">
             <p class="food_options__alert__p">A terméket rögzítettük!</p>
         </div>
-        <?php endif ?>
-        <?php if($dataDelete): ?>
+        <?php endif?>
+        <?php if ($dataDelete): ?>
         <div class="alert alert-danger food_options__alert">
             <p class="food_options__alert__p">Az terméket töröltük!</p>
         </div>
-        <?php endif ?>
+        <?php endif?>
         <ul class="food_options-ul nav nav-tabs d-flex justify-content-center">
             <!-- <li class="active">
                 <a href="#tab1" data-toggle="tab">Napi ajánlat</a>
@@ -82,18 +82,25 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getsoup as $soup) : ?>
+                                        <?php foreach ($getsoup as $soup): ?>
                                         <form method="POST"
-                                            action="/menu-recording/<?php esc($soup['id'])  ?>/soupdelete">
+                                            action="/menu-recording/<?php esc($soup['id'])?>/soupdelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($soup["soup_name"]) ?></h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left"><?php esc($soup["soup_name"])?></h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/soup<?php esc($soup["id"])?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
+
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
 
                                     </div>
                                 </div>
@@ -148,20 +155,26 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($gethungarianDishes as $hungarianDishes) : ?>
+                                        <?php foreach ($gethungarianDishes as $hungarianDishes): ?>
                                         <form method="POST"
-                                            action="/menu-recording/<?php esc($hungarianDishes['id'])  ?>/hungarianDishesdelete">
+                                            action="/menu-recording/<?php esc($hungarianDishes['id'])?>/hungarianDishesdelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left">
-                                                        <?php esc($hungarianDishes["hungarianDishes_name"]) ?>
-                                                    </h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left">
+                                                            <?php esc($hungarianDishes["hungarianDishes_name"])?>
+                                                        </h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/hungarianDishes<?php esc($hungarianDishes["id"])?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -214,19 +227,26 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getmainCourses as $mainCourses) : ?>
+                                        <?php foreach ($getmainCourses as $mainCourses): ?>
                                         <form method="POST"
-                                            action="/menu-recording/<?php esc($mainCourses['id'])  ?>/mainCoursesdelete">
+                                            action="/menu-recording/<?php esc($mainCourses['id'])?>/mainCoursesdelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($mainCourses["mainCourses_name"]) ?>
-                                                    </h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left">
+                                                            <?php esc($mainCourses["mainCourses_name"])?>
+                                                        </h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/mainCourses<?php esc($mainCourses["id"])?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -278,18 +298,25 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getdesserts as $desserts) : ?>
+                                        <?php foreach ($getdesserts as $desserts): ?>
                                         <form method="POST"
-                                            action="/menu-recording/<?php esc($desserts['id'])  ?>/dessertsdelete">
+                                            action="/menu-recording/<?php esc($desserts['id'])?>/dessertsdelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($desserts["desserts_name"]) ?></h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left"><?php esc($desserts["desserts_name"])?>
+                                                        </h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/desserts<?php esc($desserts["id"])?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -342,19 +369,25 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getgarnishes as $garnishes) : ?>
+                                        <?php foreach ($getgarnishes as $garnishes): ?>
                                         <form method="POST"
-                                            action="/menu-recording/<?php esc($garnishes['id'])  ?>/garnishesdelete">
+                                            action="/menu-recording/<?php esc($garnishes['id'])?>/garnishesdelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($garnishes["garnishes_name"]) ?>
-                                                    </h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left"><?php esc($garnishes["garnishes_name"])?>
+                                                        </h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/garnishes<?php esc($garnishes["id"])?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -408,19 +441,25 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($gethomemadePickles as $homemadePickles) : ?>
+                                        <?php foreach ($gethomemadePickles as $homemadePickles): ?>
                                         <form method="POST"
-                                            action="/menu-recording/<?php esc($homemadePickles['id'])  ?>/homemadePicklesdelete">
+                                            action="/menu-recording/<?php esc($homemadePickles['id'])?>/homemadePicklesdelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left">
-                                                        <?php esc($homemadePickles["homemadePickles_name"]) ?></h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left">
+                                                            <?php esc($homemadePickles["homemadePickles_name"])?></h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/homemadePickles<?php esc($homemadePickles["id"])?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -472,19 +511,25 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getdrinks as $drinks) : ?>
+                                        <?php foreach ($getdrinks as $drinks): ?>
                                         <form method="POST"
-                                            action="/menu-recording/<?php esc($drinks['id'])  ?>/drinksdelete">
+                                            action="/menu-recording/<?php esc($drinks['id'])?>/drinksdelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left">
-                                                        <?php esc($drinks["drinks_name"]) ?></h3>
-                                                    <button type="submit"
-                                                        class="btn btn-danger float-right">Törlés</button>
+                                                    <div class="food-update-delete-box">
+                                                        <h3 class="text-left">
+                                                            <?php esc($drinks["drinks_name"])?></h3>
+                                                        <h4 class="food-update">
+                                                            <a class="btn btn-success"
+                                                                href="/drinks<?php esc($drinks["id"])?>">Módosítás</a>
+                                                        </h4>
+                                                        <button type="submit"
+                                                            class="btn btn-danger float-right">Törlés</button>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
                                     </div>
                                 </div>
                             </div>
@@ -495,11 +540,5 @@
 
         </div>
     </div>
-
-    <!-- <div class="food-delete-box">
-        <form class="food-delete-box__form" id="foodDelete" action="/foodDelete" method="post">
-            <button class="btn food-delete-box__btn" name="submit" type="submit">Heti menü törlése</button>
-        </form>
-    </div> -->
 
 </section>

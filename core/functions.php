@@ -56,6 +56,37 @@ function getConnection()
     return $connection;
 }
 
+function loginUser($connection, $email, $password)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT name, password FROM users WHERE email = ?')) {
+        mysqli_stmt_bind_param($statement, "s", $email);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        $record = mysqli_fetch_assoc($result);
+        if ($record != null && password_verify($password, $record["password"])) {
+            $statement = mysqli_prepare($connection, 'UPDATE users SET last_login = ? WHERE email = ?');
+            mysqli_stmt_bind_param($statement, 'ss', date("Y.m.d H:i:s"), $email);
+            mysqli_stmt_execute($statement);
+            return $record;
+        } else {
+            return null;
+        }
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+function createUser()
+{
+    $loggedIn = array_key_exists("user", $_SESSION);
+    return [
+        "loggedIn" => $loggedIn,
+        "name" => $loggedIn ? $_SESSION["user"]["name"] : null
+    ];
+}
+
 function programmesAppend($connection, $programmes_name, $programmes_date, $programmes_time, $programmes_characterization)
 {
     if ($statement = mysqli_prepare($connection, 'INSERT INTO programmes (programmes_name,programmes_date,programmes_time,programmes_characterization) VALUES (?,?,?,?)')) {
@@ -126,6 +157,31 @@ function mondayDelete($connection, $id)
     }
 }
 
+function getMondayById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM monday WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateMonday($connection, $id, $monday_name, $monday_characterization)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE monday SET monday_name = ?, monday_characterization = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "ssi", $monday_name, $monday_characterization, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
 function tuesdayAppend($connection, $tuesday_name, $tuesday_characterization)
 {
     if ($statement = mysqli_prepare($connection, 'INSERT INTO tuesday (tuesday_name,tuesday_characterization) VALUES (?,?)')) {
@@ -157,6 +213,31 @@ function tuesdayDelete($connection, $id)
         mysqli_stmt_execute($statement);
     } else {
         logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function getTuesdayById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM tuesday WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateTuesday($connection, $id, $tuesday_name, $tuesday_characterization)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE tuesday SET tuesday_name = ?, tuesday_characterization = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "ssi", $tuesday_name, $tuesday_characterization, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
         errorPage();
     }
 }
@@ -196,6 +277,31 @@ function wednesdayDelete($connection, $id)
     }
 }
 
+function getWednesdayById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM wednesday WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateWednesday($connection, $id, $wednesday_name, $wednesday_characterization)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE wednesday SET wednesday_name = ?, wednesday_characterization = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "ssi", $wednesday_name, $wednesday_characterization, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
 function thursdayAppend($connection, $thursday_name, $thursday_characterization)
 {
     if ($statement = mysqli_prepare($connection, 'INSERT INTO thursday (thursday_name,thursday_characterization) VALUES (?,?)')) {
@@ -227,6 +333,31 @@ function thursdayDelete($connection, $id)
         mysqli_stmt_execute($statement);
     } else {
         logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function getThursdayById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM thursday WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateThursday($connection, $id, $thursday_name, $thursday_characterization)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE thursday SET thursday_name = ?, thursday_characterization = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "ssi", $thursday_name, $thursday_characterization, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
         errorPage();
     }
 }
@@ -266,6 +397,31 @@ function fridayDelete($connection, $id)
     }
 }
 
+function getFridayById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM friday WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateFriday($connection, $id, $friday_name, $friday_characterization)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE friday SET friday_name = ?, friday_characterization = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "ssi", $friday_name, $friday_characterization, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
 function soupAppend($connection, $soup_name, $soup_characterization, $soup_price)
 {
     if ($statement = mysqli_prepare($connection, 'INSERT INTO soup (soup_name,soup_characterization,soup_price) VALUES (?,?,?)')) {
@@ -297,6 +453,31 @@ function soupDelete($connection, $id)
         mysqli_stmt_execute($statement);
     } else {
         logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function getSoupById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM soup WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateSoup($connection, $id, $soup_name, $soup_characterization, $soup_price)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE soup SET soup_name = ?, soup_characterization = ?, soup_price = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "sssi", $soup_name, $soup_characterization, $soup_price, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
         errorPage();
     }
 }
@@ -336,6 +517,31 @@ function hungarianDishesDelete($connection, $id)
     }
 }
 
+function getHungarianDishesById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM hungarianDishes WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateHungarianDishes($connection, $id, $hungarianDishes_name, $hungarianDishes_characterization, $hungarianDishes_price)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE hungarianDishes SET hungarianDishes_name = ?, hungarianDishes_characterization = ?, hungarianDishes_price = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "sssi", $hungarianDishes_name, $hungarianDishes_characterization, $hungarianDishes_price, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
 function mainCoursesAppend($connection, $mainCourses_name, $mainCourses_characterization, $mainCourses_price)
 {
     if ($statement = mysqli_prepare($connection, 'INSERT INTO mainCourses (mainCourses_name,mainCourses_characterization,mainCourses_price) VALUES (?,?,?)')) {
@@ -370,6 +576,32 @@ function mainCoursesDelete($connection, $id)
         errorPage();
     }
 }
+
+function getMainCoursesById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM mainCourses WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateMainCourses($connection, $id, $mainCourses_name, $mainCourses_characterization, $mainCourses_price)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE mainCourses SET mainCourses_name = ?, mainCourses_characterization = ?, mainCourses_price = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "sssi", $mainCourses_name, $mainCourses_characterization, $mainCourses_price, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
 
 function dessertsAppend($connection, $desserts_name, $desserts_characterization, $desserts_price)
 {
@@ -406,6 +638,32 @@ function dessertsDelete($connection, $id)
     }
 }
 
+function getDessertsById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM desserts WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateDesserts($connection, $id, $desserts_name, $desserts_characterization, $desserts_price)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE desserts SET desserts_name = ?, desserts_characterization = ?, desserts_price = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "sssi", $desserts_name, $desserts_characterization, $desserts_price, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
 function garnishesAppend($connection, $garnishes_name, $garnishes_characterization, $garnishes_price)
 {
     if ($statement = mysqli_prepare($connection, 'INSERT INTO garnishes (garnishes_name,garnishes_characterization,garnishes_price) VALUES (?,?,?)')) {
@@ -437,6 +695,31 @@ function garnishesDelete($connection, $id)
         mysqli_stmt_execute($statement);
     } else {
         logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function getGarnishesById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM garnishes WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateGarnishes($connection, $id, $garnishes_name, $garnishes_characterization, $garnishes_price)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE garnishes SET garnishes_name = ?, garnishes_characterization = ?, garnishes_price = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "sssi", $garnishes_name, $garnishes_characterization, $garnishes_price, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
         errorPage();
     }
 }
@@ -476,6 +759,31 @@ function homemadePicklesDelete($connection, $id)
     }
 }
 
+function getHomemadePicklesById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM homemadePickles WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateHomemadePickles($connection, $id, $homemadePickles_name, $homemadePickles_characterization, $homemadePickles_price)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE homemadePickles SET homemadePickles_name = ?, homemadePickles_characterization = ?, homemadePickles_price = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "sssi", $homemadePickles_name, $homemadePickles_characterization, $homemadePickles_price, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
 function drinksAppend($connection, $drinks_name, $drinks_characterization, $drinks_price)
 {
     if ($statement = mysqli_prepare($connection, 'INSERT INTO drinks (drinks_name,drinks_characterization,drinks_price) VALUES (?,?,?)')) {
@@ -507,6 +815,31 @@ function drinksDelete($connection, $id)
         mysqli_stmt_execute($statement);
     } else {
         logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function getDrinksById($connection, $id)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * FROM drinks WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "i", $id);
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_assoc($result);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function updateDrinks($connection, $id, $drinks_name, $drinks_characterization, $drinks_price)
+{
+
+    if ($statement = mysqli_prepare($connection, 'UPDATE drinks SET drinks_name = ?, drinks_characterization = ?, drinks_price = ? WHERE id = ?')) {
+        mysqli_stmt_bind_param($statement, "sssi", $drinks_name, $drinks_characterization, $drinks_price, $id);
+        mysqli_stmt_execute($statement);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
         errorPage();
     }
 }
@@ -808,6 +1141,40 @@ function imageAppend($connection, $image)
 function retrieveAllimages($connection)
 {
     if ($statement = mysqli_prepare($connection, 'SELECT id, image  FROM image')) {
+        $null = null;
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_store_result($statement);
+        mysqli_stmt_bind_result($statement, $id, $image);
+        $images = [];
+        while (mysqli_stmt_fetch($statement)) {
+            $images[] = ["id" => $id, "image" => $image];
+        }
+        mysqli_stmt_close($statement);
+        return $images;
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+
+function PanzioimageAppend($connection, $image)
+{
+    if ($statement = mysqli_prepare($connection, 'INSERT INTO panzio_image (image) VALUES (?)')) {
+        $null = null;
+        mysqli_stmt_bind_param($statement, 'b', $null);
+        mysqli_stmt_send_long_data($statement, 0, file_get_contents($image));
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+    } else {
+        logMessage('ERROR', 'Query error:' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function PanzioretrieveAllimages($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT id, image  FROM panzio_image')) {
         $null = null;
         mysqli_stmt_execute($statement);
         mysqli_stmt_store_result($statement);

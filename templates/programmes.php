@@ -1,16 +1,16 @@
 <section class="food_options text-center">
     <div class="container">
         <h2 class="mb-100">Közelgő események rögzítése</h2>
-        <?php if($foodFixed): ?>
+        <?php if ($foodFixed): ?>
         <div class="alert alert-success food_options__alert">
             <p class="food_options__alert__p">Az eseményt rögzítettük!</p>
         </div>
-        <?php endif ?>
-        <?php if($dataDelete): ?>
+        <?php endif?>
+        <?php if ($dataDelete): ?>
         <div class="alert alert-danger food_options__alert">
             <p class="food_options__alert__p">Az eseményt töröltük!</p>
         </div>
-        <?php endif ?>
+        <?php endif?>
         <div class="mt-100 tab-content">
 
             <div class="tab-pane active">
@@ -60,19 +60,19 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col-xl-12">
-                                        <?php foreach ($getprogrammes as $programmes) : ?>
+                                        <?php foreach ($getprogrammes as $programmes): ?>
                                         <form method="POST"
-                                            action="/programmes/<?php esc($programmes['id'])  ?>/programmesdelete">
+                                            action="/programmes/<?php esc($programmes['id'])?>/programmesdelete">
                                             <ul>
                                                 <li>
-                                                    <h3 class="text-left"><?php esc($programmes["programmes_name"]) ?>
+                                                    <h3 class="text-left"><?php esc($programmes["programmes_name"])?>
                                                     </h3>
                                                     <button type="submit"
                                                         class="btn btn-danger float-right">Törlés</button>
                                                 </li>
                                             </ul>
                                         </form>
-                                        <?php endforeach; ?>
+                                        <?php endforeach;?>
 
                                     </div>
                                 </div>
